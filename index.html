@@ -437,7 +437,12 @@ function renderDashboard() {
   const filterRow = el('div', { class: 'filter-row' });
   filterRow.appendChild(el('label', { text: 'Show:', style: 'margin:0;' }));
   const select = el('select', { id: 'filter-select', onchange: renderList });
-  [['active', 'Active only'], ['all', 'All (including delivered)'], ['delivered', 'Delivered only']].forEach(([v, l]) => {
+  const filterOptions = [
+    ['active', 'Active only'],
+    ['all', 'All'],
+    ...STATUSES.map(s => [s.value, s.label]),
+  ];
+  filterOptions.forEach(([v, l]) => {
     select.appendChild(el('option', { value: v, text: l }));
   });
   filterRow.appendChild(select);
@@ -455,7 +460,7 @@ function renderList() {
   const filter = document.getElementById('filter-select').value;
   let packages = state.packages;
   if (filter === 'active') packages = packages.filter(p => p.status !== 'delivered');
-  if (filter === 'delivered') packages = packages.filter(p => p.status === 'delivered');
+  else if (filter !== 'all') packages = packages.filter(p => p.status === filter);
 
   if (packages.length === 0) {
     list.appendChild(el('div', { class: 'empty', text: 'No packages to show. Add one above, or check your filter.' }));
