@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>USPS Package Dashboard</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root {
+    --navy: #0b2f6b;
+    --red: #e0393e;
+    --bg: #f4f6fa;
+    --card: #ffffff;
+    --border: #dfe4ee;
+    --text: #1c2333;
+    --muted: #6b7688;
+    --green: #1b8a4b;
+    --amber: #b8790a;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+  }
+  header {
+    background: var(--navy);
+    color: white;
+    padding: 20px 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  header h1 { font-size: 20px; margin: 0; font-weight: 600; }
+  header .stripe { width: 10px; height: 28px; background: var(--red); display: inline-block; margin-right: 12px; border-radius: 2px; vertical-align: middle;}
+  header .sync-status { font-size: 12px; color: #c7d3ec; }
+  header .actions { display: flex; gap: 8px; align-items: center; }
+  header .actions button { font-size: 12px; padding: 6px 12px; background: white; color: var(--navy); }
+  main { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 18px;
+  }
+  input[type=text], input[type=password], select, textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    font-size: 14px;
+    margin-top: 6px;
+    font-family: inherit;
+    background: white;
+  }
+  label { font-size: 13px; font-weight: 600; color: var(--muted); }
+  button {
+    background: var(--navy);
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  button:hover { opacity: 0.9; }
+  button.secondary { background: transparent; color: var(--navy); border: 1px solid var(--border); }
+  button.danger { background: var(--red); }
+  button:disabled { opacity: 0.6; cursor: default; }
+  .row { display: flex; gap: 10px; align-items: flex-end; flex-wrap: wrap; }
+  .row > div { flex: 1; min-width: 160px; }
+  .muted { color: var(--muted); font-size: 13px; }
+  .error { color: var(--red); font-size: 13px; margin-top: 8px; }
+  .pkg { border: 1px solid var(--border); border-radius: 10px; padding: 16px 18px; margin-bottom: 14px; background: var(--card); }
+  .pkg.delivered { opacity: 0.65; }
+  .pkg-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 10px; flex-wrap: wrap; }
+  .pkg-name { font-weight: 700; font-size: 16px; }
+  .pkg-num { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; color: var(--muted); user-select: all; }
+  .badge { display: inline-block; padding: 3px 10px; border-radius: 999px; font-size: 12px; font-weight: 700; white-space: nowrap; }
+  .badge.delivered { background: #e4f6ea; color: var(--green); }
+  .badge.transit { background: #fff3e0; color: var(--amber); }
+  .badge.unknown { background: #eee; color: var(--muted); }
+  .badge.exception { background: #fde2e2; color: var(--red); }
+  .pkg-body { display: flex; gap: 14px; margin-top: 12px; flex-wrap: wrap; }
+  .pkg-body > div { flex: 1; min-width: 180px; }
+  .pkg-actions { margin-top: 12px; display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+  .toolbar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; flex-wrap: wrap; gap: 10px; }
+  a.track-link {
+    color: white; background: var(--navy); text-decoration: none;
+    padding: 9px 16px; border-radius: 6px; font-size: 13px; font-weight: 600;
+    display: inline-block;
+  }
+  a.track-link:hover { opacity: 0.9; }
+  .empty { text-align: center; color: var(--muted); padding: 40px 0; }
+  .filter-row { display: flex; gap: 8px; align-items: center; }
+  .filter-row select { width: auto; margin-top: 0; padding: 6px 10px; font-size: 13px; }
+  .timestamp { font-size: 12px; color: var(--muted); margin-top: 8px; }
+  #setup { max-width: 520px; margin: 60px auto; }
+  .sync-dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 6px; vertical-align: middle; }
+  .sync-dot.ok { background: #6bd18f; }
+  .sync-dot.busy { background: #ffcf6b; }
+  .sync-dot.err { background: var(--red); }
+</style>
+</head>
+<body>
+
+<header>
+  <h1><span class="stripe"></span>USPS Package Dashboard</h1>
+  <div class="actions">
+    <span class="sync-status" id="sync-status"></span>
+    <button onclick="openSettings()">Settings</button>
+  </div>
+</header>
+
+<main id="app">Loading...</main>
+
+<script>
+const CONFIG_KEY = 'usps-dash-github-config-v1';
+const STATUSES = [
+  { value: 'unknown', label: 'Not checked yet' },
+  { value: 'label_created', label: 'Label created / awaiting pickup' },
+  { value: 'in_transit', label: 'In transit' },
+  { value: 'out_for_delivery', label: 'Out for delivery' },
+  { value: 'delivered', label: 'Delivered' },
+  { value: 'exception', label: 'Delayed / exception' },
+];
+
+let state = { packages: [], sha: null };
+let saveTimer = null;
+
+function getConfig() {
+  try { return JSON.parse(localStorage.getItem(CONFIG_KEY)); } catch (e) { return null; }
+}
+function setConfig(cfg) { localStorage.setItem(CONFIG_KEY, JSON.stringify(cfg)); }
+
+function apiUrl(cfg) {
+  return `https://api.github.com/repos/${cfg.owner}/${cfg.repo}/contents/${cfg.path}`;
+}
+
+function b64EncodeUnicode(str) {
+  return btoa(encodeURIComponent(str).replace(/%([0-9A-F]{2})/g, (m, p1) => String.fromCharCode('0x' + p1)));
+}
+function b64DecodeUnicode(str) {
+  return decodeURIComponent(atob(str).split('').map(c => '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2)).join(''));
+}
+
+function setSyncStatus(kind, text) {
+  const el = document.getElementById('sync-status');
+  const dotClass = kind === 'ok' ? 'ok' : kind === 'busy' ? 'busy' : 'err';
+  el.innerHTML = `<span class="sync-dot ${dotClass}"></span>${text}`;
+}
+
+async function githubRequest(cfg, method, body) {
+  const headers = {
+    'Authorization': 'token ' + cfg.token,
+    'Accept': 'application/vnd.github+json',
+  };
+  if (body) headers['Content-Type'] = 'application/json';
+  const res = await fetch(apiUrl(cfg), { method, headers, body: body ? JSON.stringify(body) : undefined });
+  return res;
+}
+
+async function fetchRemote(cfg) {
+  const res = await githubRequest(cfg, 'GET');
+  if (res.status === 404) {
+    // File doesn't exist yet -- treat as an empty list, sha null (will create on first save).
+    return { packages: [], sha: null };
+  }
+  if (!res.ok) {
+    throw new Error(`GitHub returned ${res.status}: ${(await res.json().catch(()=>({})))?.message || res.statusText}`);
+  }
+  const data = await res.json();
+  const content = b64DecodeUnicode(data.content.replace(/\n/g, ''));
+  let packages;
+  try { packages = JSON.parse(content); } catch (e) { packages = []; }
+  if (!Array.isArray(packages)) packages = [];
+  return { packages, sha: data.sha };
+}
+
+async function saveRemote(cfg, packages, retry = true) {
+  setSyncStatus('busy', 'Syncing…');
+  const content = b64EncodeUnicode(JSON.stringify(packages, null, 2));
+  const body = {
+    message: 'Update packages via dashboard',
+    content,
+    branch: cfg.branch || 'main',
+  };
+  if (state.sha) body.sha = state.sha;
+
+  const res = await githubRequest(cfg, 'PUT', body);
+  if (res.status === 409 || res.status === 422) {
+    if (retry) {
+      // Someone/something else changed the file since we last fetched it. Refetch and retry once.
+      const remote = await fetchRemote(cfg);
+      state.sha = remote.sha;
+      return saveRemote(cfg, packages, false);
+    }
+    setSyncStatus('err', 'Sync conflict -- refresh the page and redo your last edit.');
+    throw new Error('Conflict saving to GitHub.');
+  }
+  if (!res.ok) {
+    const msg = (await res.json().catch(()=>({})))?.message || res.statusText;
+    setSyncStatus('err', 'Sync failed: ' + msg);
+    throw new Error('GitHub save failed: ' + msg);
+  }
+  const data = await res.json();
+  state.sha = data.content.sha;
+  setSyncStatus('ok', 'Synced ' + new Date().toLocaleTimeString());
+}
+
+function queueSave() {
+  clearTimeout(saveTimer);
+  saveTimer = setTimeout(async () => {
+    const cfg = getConfig();
+    try {
+      await saveRemote(cfg, state.packages);
+    } catch (e) {
+      console.error(e);
+    }
+  }, 600); // debounce rapid edits (e.g. typing in notes)
+}
+
+// --------------------------------------------------------------------
+// Setup screen
+// --------------------------------------------------------------------
+
+function openSettings() {
+  renderSetup(true);
+}
+
+function renderSetup(isEditing) {
+  const app = document.getElementById('app');
+  app.innerHTML = '';
+  const existing = getConfig() || {};
+  const wrap = document.createElement('div');
+  wrap.id = 'setup';
+  const card = document.createElement('div');
+  card.className = 'card';
+  card.innerHTML = `
+    <h2 style="margin-top:0;">${isEditing ? 'Sync settings' : 'Connect to GitHub'}</h2>
+    <p class="muted">This page reads and writes <code>data/packages.json</code> in your GitHub repo, so your package list syncs across every device you paste this token into. The repo must be public for free GitHub Pages, so anyone who finds the repo URL could see your tracking numbers and notes -- avoid putting anything sensitive in there.</p>
+    <label>GitHub username or org</label>
+    <input type="text" id="cfg-owner" placeholder="yourusername" value="${existing.owner || ''}">
+    <label style="margin-top:12px;">Repository name</label>
+    <input type="text" id="cfg-repo" placeholder="package-dashboard" value="${existing.repo || ''}">
+    <label style="margin-top:12px;">Branch</label>
+    <input type="text" id="cfg-branch" placeholder="main" value="${existing.branch || 'main'}">
+    <label style="margin-top:12px;">Data file path</label>
+    <input type="text" id="cfg-path" placeholder="data/packages.json" value="${existing.path || 'data/packages.json'}">
+    <label style="margin-top:12px;">Personal access token (fine-grained, Contents: Read & write, scoped to this repo only)</label>
+    <input type="password" id="cfg-token" placeholder="github_pat_..." value="${existing.token || ''}">
+    <div class="error" id="setup-error"></div>
+    <div style="margin-top:16px; display:flex; gap:8px;">
+      <button id="cfg-save">Save &amp; connect</button>
+      ${isEditing ? '<button class="secondary" id="cfg-cancel">Cancel</button>' : ''}
+    </div>
+  `;
+  wrap.appendChild(card);
+  app.appendChild(wrap);
+
+  if (isEditing) {
+    document.getElementById('cfg-cancel').addEventListener('click', () => init());
+  }
+  document.getElementById('cfg-save').addEventListener('click', async () => {
+    const cfg = {
+      owner: document.getElementById('cfg-owner').value.trim(),
+      repo: document.getElementById('cfg-repo').value.trim(),
+      branch: document.getElementById('cfg-branch').value.trim() || 'main',
+      path: document.getElementById('cfg-path').value.trim() || 'data/packages.json',
+      token: document.getElementById('cfg-token').value.trim(),
+    };
+    const errBox = document.getElementById('setup-error');
+    errBox.textContent = '';
+    if (!cfg.owner || !cfg.repo || !cfg.token) {
+      errBox.textContent = 'Username, repo, and token are all required.';
+      return;
+    }
+    const btn = document.getElementById('cfg-save');
+    btn.disabled = true;
+    btn.textContent = 'Connecting…';
+    try {
+      const remote = await fetchRemote(cfg);
+      setConfig(cfg);
+      state.packages = remote.packages;
+      state.sha = remote.sha;
+      init();
+    } catch (e) {
+      errBox.textContent = 'Could not connect: ' + e.message;
+      btn.disabled = false;
+      btn.textContent = 'Save & connect';
+    }
+  });
+}
+
+// --------------------------------------------------------------------
+// Main dashboard
+// --------------------------------------------------------------------
+
+function trackingUrl(num) { return 'https://tools.usps.com/tracking/' + encodeURIComponent(num); }
+
+function el(tag, attrs = {}, children = []) {
+  const e = document.createElement(tag);
+  for (const [k, v] of Object.entries(attrs)) {
+    if (k === 'text') e.textContent = v;
+    else if (k.startsWith('on')) e.addEventListener(k.slice(2), v);
+    else e.setAttribute(k, v);
+  }
+  (Array.isArray(children) ? children : [children]).forEach(c => c && e.appendChild(c));
+  return e;
+}
+
+function badgeClass(status) {
+  if (status === 'delivered') return 'delivered';
+  if (status === 'in_transit' || status === 'out_for_delivery' || status === 'label_created') return 'transit';
+  if (status === 'exception') return 'exception';
+  return 'unknown';
+}
+function statusLabel(status) {
+  const found = STATUSES.find(s => s.value === status);
+  return found ? found.label : status;
+}
+
+function addPackage() {
+  const nicknameInput = document.getElementById('new-nickname');
+  const trackingInput = document.getElementById('new-tracking');
+  const errBox = document.getElementById('add-error');
+  errBox.textContent = '';
+
+  const nickname = nicknameInput.value.trim();
+  const tracking_number = trackingInput.value.trim().replace(/\s+/g, '');
+
+  if (!tracking_number) { errBox.textContent = 'Enter a tracking number.'; return; }
+  if (!/^[A-Za-z0-9]{8,40}$/.test(tracking_number)) { errBox.textContent = "That doesn't look like a valid tracking number."; return; }
+  if (state.packages.some(p => p.tracking_number === tracking_number)) { errBox.textContent = 'That tracking number is already on your list.'; return; }
+
+  state.packages.unshift({
+    id: crypto.randomUUID(),
+    nickname: nickname || tracking_number,
+    tracking_number,
+    status: 'unknown',
+    notes: '',
+    added_at: new Date().toISOString(),
+    updated_at: null,
+  });
+  nicknameInput.value = '';
+  trackingInput.value = '';
+  renderList();
+  queueSave();
+}
+
+function removePackage(id) {
+  const pkg = state.packages.find(p => p.id === id);
+  if (!pkg) return;
+  if (!confirm('Remove "' + pkg.nickname + '" from your list?')) return;
+  state.packages = state.packages.filter(p => p.id !== id);
+  renderList();
+  queueSave();
+}
+
+function updateStatus(id, status) {
+  const pkg = state.packages.find(p => p.id === id);
+  if (!pkg) return;
+  pkg.status = status;
+  pkg.updated_at = new Date().toISOString();
+  renderList();
+  queueSave();
+}
+
+function updateNotes(id, notes) {
+  const pkg = state.packages.find(p => p.id === id);
+  if (!pkg) return;
+  pkg.notes = notes;
+  pkg.updated_at = new Date().toISOString();
+  queueSave(); // no renderList -- would steal focus mid-typing
+}
+
+function renderDashboard() {
+  const app = document.getElementById('app');
+  app.innerHTML = '';
+
+  const addCard = el('div', { class: 'card' });
+  addCard.appendChild(el('h3', { text: 'Add a package', style: 'margin-top:0;' }));
+  const row = el('div', { class: 'row' });
+  const numInput = el('input', { type: 'text', id: 'new-tracking', placeholder: 'Tracking number' });
+  const nameInput = el('input', { type: 'text', id: 'new-nickname', placeholder: 'Nickname (optional)' });
+  row.appendChild(el('div', {}, [el('label', { text: 'Tracking number' }), numInput]));
+  row.appendChild(el('div', {}, [el('label', { text: 'Nickname' }), nameInput]));
+  row.appendChild(el('button', { text: 'Add', onclick: addPackage }));
+  addCard.appendChild(row);
+  addCard.appendChild(el('div', { class: 'error', id: 'add-error' }));
+  app.appendChild(addCard);
+
+  const toolbar = el('div', { class: 'toolbar' });
+  toolbar.appendChild(el('h3', { text: 'Your packages', style: 'margin:0;' }));
+  const filterRow = el('div', { class: 'filter-row' });
+  filterRow.appendChild(el('label', { text: 'Show:', style: 'margin:0;' }));
+  const select = el('select', { id: 'filter-select', onchange: renderList });
+  [['active', 'Active only'], ['all', 'All (including delivered)'], ['delivered', 'Delivered only']].forEach(([v, l]) => {
+    select.appendChild(el('option', { value: v, text: l }));
+  });
+  filterRow.appendChild(select);
+  toolbar.appendChild(filterRow);
+  app.appendChild(toolbar);
+
+  app.appendChild(el('div', { id: 'pkg-list' }));
+  renderList();
+}
+
+function renderList() {
+  const list = document.getElementById('pkg-list');
+  if (!list) return;
+  list.innerHTML = '';
+  const filter = document.getElementById('filter-select').value;
+  let packages = state.packages;
+  if (filter === 'active') packages = packages.filter(p => p.status !== 'delivered');
+  if (filter === 'delivered') packages = packages.filter(p => p.status === 'delivered');
+
+  if (packages.length === 0) {
+    list.appendChild(el('div', { class: 'empty', text: 'No packages to show. Add one above, or check your filter.' }));
+    return;
+  }
+
+  for (const pkg of packages) {
+    const card = el('div', { class: 'pkg' + (pkg.status === 'delivered' ? ' delivered' : '') });
+    const top = el('div', { class: 'pkg-top' });
+    top.appendChild(el('div', {}, [
+      el('div', { class: 'pkg-name', text: pkg.nickname }),
+      el('div', { class: 'pkg-num', text: pkg.tracking_number }),
+    ]));
+    top.appendChild(el('span', { class: 'badge ' + badgeClass(pkg.status), text: statusLabel(pkg.status) }));
+    card.appendChild(top);
+
+    const body = el('div', { class: 'pkg-body' });
+    const statusCol = el('div');
+    statusCol.appendChild(el('label', { text: 'Status' }));
+    const statusSelect = el('select', { onchange: (e) => updateStatus(pkg.id, e.target.value) });
+    STATUSES.forEach(s => {
+      const opt = el('option', { value: s.value, text: s.label });
+      if (s.value === pkg.status) opt.setAttribute('selected', 'selected');
+      statusSelect.appendChild(opt);
+    });
+    statusCol.appendChild(statusSelect);
+    body.appendChild(statusCol);
+
+    const notesCol = el('div');
+    notesCol.appendChild(el('label', { text: 'Notes (location, expected date, etc.)' }));
+    const notesInput = el('input', { type: 'text', placeholder: 'e.g. Memphis, TN — expected Fri' });
+    notesInput.value = pkg.notes || '';
+    notesInput.addEventListener('input', (e) => updateNotes(pkg.id, e.target.value));
+    notesCol.appendChild(notesInput);
+    body.appendChild(notesCol);
+    card.appendChild(body);
+
+    if (pkg.updated_at) {
+      card.appendChild(el('div', { class: 'timestamp', text: 'Last updated: ' + new Date(pkg.updated_at).toLocaleString() }));
+    }
+
+    const actions = el('div', { class: 'pkg-actions' });
+    actions.appendChild(el('a', { class: 'track-link', href: trackingUrl(pkg.tracking_number), target: '_blank', rel: 'noopener', text: 'Track on USPS.com ↗' }));
+    actions.appendChild(el('button', { class: 'danger', text: 'Remove', onclick: () => removePackage(pkg.id) }));
+    card.appendChild(actions);
+
+    list.appendChild(card);
+  }
+}
+
+// --------------------------------------------------------------------
+
+async function init() {
+  const cfg = getConfig();
+  if (!cfg || !cfg.owner || !cfg.repo || !cfg.token) {
+    renderSetup(false);
+    return;
+  }
+  setSyncStatus('busy', 'Loading…');
+  try {
+    const remote = await fetchRemote(cfg);
+    state.packages = remote.packages;
+    state.sha = remote.sha;
+    setSyncStatus('ok', 'Synced ' + new Date().toLocaleTimeString());
+    renderDashboard();
+  } catch (e) {
+    setSyncStatus('err', 'Could not load: ' + e.message);
+    document.getElementById('app').innerHTML =
+      `<div class="card"><p class="error">Could not load your data from GitHub: ${e.message}</p>
+       <button onclick="openSettings()">Check settings</button></div>`;
+  }
+}
+
+init();
+</script>
+</body>
+</html>
