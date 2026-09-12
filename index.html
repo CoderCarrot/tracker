@@ -129,6 +129,21 @@ const STATUSES = [
   { value: 'exception', label: 'Delayed / exception' },
 ];
 
+const CARRIERS = {
+  usps:       { label: 'USPS',       prefix: 'https://tools.usps.com/tracking/' },
+  ups:        { label: 'UPS',        prefix: 'https://www.ups.com/track?tracknum=' },
+  fedex:      { label: 'FedEx',      prefix: 'https://www.fedex.com/fedextrack/?trknbr=' },
+  yunexpress: { label: 'YunExpress', prefix: 'https://www.yuntrack.com/parcelTracking?id=' },
+  yanwen:     { label: 'Yanwen',     prefix: 'https://track.yw56.com.cn/en/querydel?nums=' },
+  uniuni:     { label: 'UniUni',     prefix: 'https://www.uniuni.com/tracking/?no=' },
+  chitchats:  { label: 'Chit Chats', prefix: 'https://chitchats.com/tracking/' },
+};
+const DEFAULT_CARRIER = 'usps';
+
+function carrierInfo(carrier) {
+  return CARRIERS[carrier] || CARRIERS[DEFAULT_CARRIER];
+}
+
 let state = { packages: [], sha: null };
 let saveTimer = null;
 
@@ -300,7 +315,9 @@ function renderSetup(isEditing) {
 // Main dashboard
 // --------------------------------------------------------------------
 
-function trackingUrl(num) { return 'https://tools.usps.com/tracking/' + encodeURIComponent(num); }
+function trackingUrl(pkg) {
+  return carrierInfo(pkg.carrier).prefix + encodeURIComponent(pkg.tracking_number);
+}
 
 function el(tag, attrs = {}, children = []) {
   const e = document.createElement(tag);
@@ -327,20 +344,23 @@ function statusLabel(status) {
 function addPackage() {
   const nicknameInput = document.getElementById('new-nickname');
   const trackingInput = document.getElementById('new-tracking');
+  const carrierSelect = document.getElementById('new-carrier');
   const errBox = document.getElementById('add-error');
   errBox.textContent = '';
 
   const nickname = nicknameInput.value.trim();
   const tracking_number = trackingInput.value.trim().replace(/\s+/g, '');
+  const carrier = carrierSelect.value;
 
   if (!tracking_number) { errBox.textContent = 'Enter a tracking number.'; return; }
-  if (!/^[A-Za-z0-9]{8,40}$/.test(tracking_number)) { errBox.textContent = "That doesn't look like a valid tracking number."; return; }
+  if (!/^[A-Za-z0-9-]{5,40}$/.test(tracking_number)) { errBox.textContent = "That doesn't look like a valid tracking number."; return; }
   if (state.packages.some(p => p.tracking_number === tracking_number)) { errBox.textContent = 'That tracking number is already on your list.'; return; }
 
   state.packages.unshift({
     id: crypto.randomUUID(),
     nickname: nickname || tracking_number,
     tracking_number,
+    carrier,
     status: 'unknown',
     notes: '',
     added_at: new Date().toISOString(),
@@ -348,6 +368,15 @@ function addPackage() {
   });
   nicknameInput.value = '';
   trackingInput.value = '';
+  renderList();
+  queueSave();
+}
+
+function updateCarrier(id, carrier) {
+  const pkg = state.packages.find(p => p.id === id);
+  if (!pkg) return;
+  pkg.carrier = carrier;
+  pkg.updated_at = new Date().toISOString();
   renderList();
   queueSave();
 }
@@ -387,6 +416,13 @@ function renderDashboard() {
   const row = el('div', { class: 'row' });
   const numInput = el('input', { type: 'text', id: 'new-tracking', placeholder: 'Tracking number' });
   const nameInput = el('input', { type: 'text', id: 'new-nickname', placeholder: 'Nickname (optional)' });
+  const carrierSelect = el('select', { id: 'new-carrier' });
+  Object.entries(CARRIERS).forEach(([value, info]) => {
+    const opt = el('option', { value, text: info.label });
+    if (value === DEFAULT_CARRIER) opt.setAttribute('selected', 'selected');
+    carrierSelect.appendChild(opt);
+  });
+  row.appendChild(el('div', {}, [el('label', { text: 'Carrier' }), carrierSelect]));
   row.appendChild(el('div', {}, [el('label', { text: 'Tracking number' }), numInput]));
   row.appendChild(el('div', {}, [el('label', { text: 'Nickname' }), nameInput]));
   row.appendChild(el('button', { text: 'Add', onclick: addPackage }));
@@ -435,6 +471,17 @@ function renderList() {
     card.appendChild(top);
 
     const body = el('div', { class: 'pkg-body' });
+    const carrierCol = el('div');
+    carrierCol.appendChild(el('label', { text: 'Carrier' }));
+    const carrierSelect = el('select', { onchange: (e) => updateCarrier(pkg.id, e.target.value) });
+    Object.entries(CARRIERS).forEach(([value, info]) => {
+      const opt = el('option', { value, text: info.label });
+      if (value === (pkg.carrier || DEFAULT_CARRIER)) opt.setAttribute('selected', 'selected');
+      carrierSelect.appendChild(opt);
+    });
+    carrierCol.appendChild(carrierSelect);
+    body.appendChild(carrierCol);
+
     const statusCol = el('div');
     statusCol.appendChild(el('label', { text: 'Status' }));
     const statusSelect = el('select', { onchange: (e) => updateStatus(pkg.id, e.target.value) });
@@ -460,7 +507,8 @@ function renderList() {
     }
 
     const actions = el('div', { class: 'pkg-actions' });
-    actions.appendChild(el('a', { class: 'track-link', href: trackingUrl(pkg.tracking_number), target: '_blank', rel: 'noopener', text: 'Track on USPS.com ↗' }));
+    const info = carrierInfo(pkg.carrier);
+    actions.appendChild(el('a', { class: 'track-link', href: trackingUrl(pkg), target: '_blank', rel: 'noopener', text: 'Track on ' + info.label + ' ↗' }));
     actions.appendChild(el('button', { class: 'danger', text: 'Remove', onclick: () => removePackage(pkg.id) }));
     card.appendChild(actions);
 
