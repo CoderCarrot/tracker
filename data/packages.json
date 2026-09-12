@@ -54,10 +54,10 @@
     "nickname": "EMAS - 81517",
     "tracking_number": "9200190323035500830359",
     "carrier": "usps",
-    "status": "unknown",
+    "status": "label_created",
     "notes": "",
     "added_at": "2026-09-12T11:22:10.943Z",
-    "updated_at": null
+    "updated_at": "2026-09-12T11:59:19.358Z"
   },
   {
     "id": "06a0253c-502e-4df7-b0fe-f7cdc6e1da61",
