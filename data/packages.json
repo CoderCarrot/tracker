@@ -14,10 +14,10 @@
     "nickname": "SG - S",
     "tracking_number": "9400150105498046125071",
     "carrier": "usps",
-    "status": "delivered",
+    "status": "label_created",
     "notes": "",
     "added_at": "2026-09-12T11:05:57.845Z",
-    "updated_at": "2026-09-12T11:15:19.240Z"
+    "updated_at": "2026-09-12T11:15:32.797Z"
   },
   {
     "id": "0ff40673-8f29-4a7f-ad27-52bf482f2b1e",
