@@ -8,13 +8,15 @@
   :root {
     --plum: #51304e;
     --olive: #636b2f;
-    --bg: #f4f6fa;
-    --card: #ffffff;
-    --border: #dfe4ee;
-    --text: #1c2333;
-    --muted: #6b7688;
-    --green: #1b8a4b;
-    --amber: #b8790a;
+    --bg: #0d1117;
+    --card: #161b22;
+    --border: #30363d;
+    --text: #e6edf3;
+    --muted: #8b949e;
+    --green: #3fb950;
+    --amber: #d29922;
+    --purple: #a371f7;
+    --grey: #8b949e;
   }
   * { box-sizing: border-box; }
   body {
@@ -37,7 +39,7 @@
   header .stripe { width: 10px; height: 28px; background: var(--olive); display: inline-block; margin-right: 12px; border-radius: 2px; vertical-align: middle;}
   header .sync-status { font-size: 12px; color: #c7d3ec; }
   header .actions { display: flex; gap: 8px; align-items: center; }
-  header .actions button { font-size: 12px; padding: 6px 12px; background: white; color: var(--plum); }
+  header .actions button { font-size: 12px; padding: 6px 12px; background: var(--card); color: var(--text); border: 1px solid var(--border); }
   main { max-width: 900px; margin: 0 auto; padding: 28px 20px 60px; }
   .card {
     background: var(--card);
@@ -54,7 +56,8 @@
     font-size: 14px;
     margin-top: 6px;
     font-family: inherit;
-    background: white;
+    background: var(--card);
+    color: var(--text);
   }
   label { font-size: 13px; font-weight: 600; color: var(--muted); }
   button {
@@ -76,15 +79,16 @@
   .muted { color: var(--muted); font-size: 13px; }
   .error { color: var(--olive); font-size: 13px; margin-top: 8px; }
   .pkg { border: 1px solid var(--border); border-radius: 10px; padding: 16px 18px; margin-bottom: 14px; background: var(--card); }
-  .pkg.deliveolive { opacity: 0.65; }
+  .pkg.delivered { opacity: 0.65; }
   .pkg-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 10px; flex-wrap: wrap; }
   .pkg-name { font-weight: 700; font-size: 16px; }
   .pkg-num { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; color: var(--muted); user-select: all; }
   .badge { display: inline-block; padding: 3px 10px; border-radius: 999px; font-size: 12px; font-weight: 700; white-space: nowrap; }
-  .badge.deliveolive { background: #e4f6ea; color: var(--green); }
-  .badge.transit { background: #fff3e0; color: var(--amber); }
-  .badge.unknown { background: #eee; color: var(--muted); }
-  .badge.exception { background: #fde2e2; color: var(--olive); }
+  .badge.delivered { background: rgba(63,185,80,0.15); color: var(--green); }
+  .badge.label_created { background: rgba(139,148,158,0.15); color: var(--grey); }
+  .badge.in_transit { background: rgba(210,153,34,0.15); color: var(--amber); }
+  .badge.out_for_delivery { background: rgba(163,113,247,0.15); color: var(--purple); }
+  .badge.exception { background: rgba(99,107,47,0.15); color: var(--olive); }
   .pkg-body { display: flex; gap: 14px; margin-top: 12px; flex-wrap: wrap; }
   .pkg-body > div { flex: 1; min-width: 180px; }
   .pkg-actions { margin-top: 12px; display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
@@ -109,7 +113,7 @@
 <body>
 
 <header>
-  <h1><span class="stripe"></span><span style="color: #df5b05;">Package Dashboard</h1>
+  <h1><span style="color: #df5b05;">Package Dashboard</span></h1>
   <div class="actions">
     <span class="sync-status" id="sync-status"></span>
     <button onclick="openSettings()">Settings</button>
@@ -125,7 +129,7 @@ const STATUSES = [
   { value: 'label_created', label: 'Label created / awaiting pickup' },
   { value: 'in_transit', label: 'In transit' },
   { value: 'out_for_delivery', label: 'Out for delivery' },
-  { value: 'deliveolive', label: 'Deliveolive' },
+  { value: 'delivered', label: 'Delivered' },
   { value: 'exception', label: 'Delayed / exception' },
 ];
 
@@ -214,7 +218,7 @@ async function saveRemote(cfg, packages, retry = true) {
       state.sha = remote.sha;
       return saveRemote(cfg, packages, false);
     }
-    setSyncStatus('err', 'Sync conflict -- refresh the page and oliveo your last edit.');
+    setSyncStatus('err', 'Sync conflict -- refresh the page and redo your last edit.');
     throw new Error('Conflict saving to GitHub.');
   }
   if (!res.ok) {
@@ -291,7 +295,7 @@ function renderSetup(isEditing) {
     const errBox = document.getElementById('setup-error');
     errBox.textContent = '';
     if (!cfg.owner || !cfg.repo || !cfg.token) {
-      errBox.textContent = 'Username, repo, and token are all requiolive.';
+      errBox.textContent = 'Username, repo, and token are all required.';
       return;
     }
     const btn = document.getElementById('cfg-save');
@@ -331,10 +335,8 @@ function el(tag, attrs = {}, children = []) {
 }
 
 function badgeClass(status) {
-  if (status === 'deliveolive') return 'deliveolive';
-  if (status === 'in_transit' || status === 'out_for_delivery' || status === 'label_created') return 'transit';
-  if (status === 'exception') return 'exception';
-  return 'unknown';
+  // Directly matches the CSS class names (.badge.label_created, .badge.in_transit, etc.)
+  return status;
 }
 function statusLabel(status) {
   const found = STATUSES.find(s => s.value === status);
@@ -435,7 +437,7 @@ function renderDashboard() {
   const filterRow = el('div', { class: 'filter-row' });
   filterRow.appendChild(el('label', { text: 'Show:', style: 'margin:0;' }));
   const select = el('select', { id: 'filter-select', onchange: renderList });
-  [['active', 'Active only'], ['all', 'All (including deliveolive)'], ['deliveolive', 'Deliveolive only']].forEach(([v, l]) => {
+  [['active', 'Active only'], ['all', 'All (including delivered)'], ['delivered', 'Delivered only']].forEach(([v, l]) => {
     select.appendChild(el('option', { value: v, text: l }));
   });
   filterRow.appendChild(select);
@@ -452,8 +454,8 @@ function renderList() {
   list.innerHTML = '';
   const filter = document.getElementById('filter-select').value;
   let packages = state.packages;
-  if (filter === 'active') packages = packages.filter(p => p.status !== 'deliveolive');
-  if (filter === 'deliveolive') packages = packages.filter(p => p.status === 'deliveolive');
+  if (filter === 'active') packages = packages.filter(p => p.status !== 'delivered');
+  if (filter === 'delivered') packages = packages.filter(p => p.status === 'delivered');
 
   if (packages.length === 0) {
     list.appendChild(el('div', { class: 'empty', text: 'No packages to show. Add one above, or check your filter.' }));
@@ -461,13 +463,15 @@ function renderList() {
   }
 
   for (const pkg of packages) {
-    const card = el('div', { class: 'pkg' + (pkg.status === 'deliveolive' ? ' deliveolive' : '') });
+    const card = el('div', { class: 'pkg' + (pkg.status === 'delivered' ? ' delivered' : '') });
     const top = el('div', { class: 'pkg-top' });
     top.appendChild(el('div', {}, [
       el('div', { class: 'pkg-name', text: pkg.nickname }),
       el('div', { class: 'pkg-num', text: pkg.tracking_number }),
     ]));
-    top.appendChild(el('span', { class: 'badge ' + badgeClass(pkg.status), text: statusLabel(pkg.status) }));
+    if (pkg.status !== 'unknown') {
+      top.appendChild(el('span', { class: 'badge ' + badgeClass(pkg.status), text: statusLabel(pkg.status) }));
+    }
     card.appendChild(top);
 
     const body = el('div', { class: 'pkg-body' });
