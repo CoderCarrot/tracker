@@ -24,10 +24,10 @@
     "nickname": "HC - 373711",
     "tracking_number": "1Z04GK220314335265",
     "carrier": "ups",
-    "status": "unknown",
+    "status": "in_transit",
     "notes": "",
     "added_at": "2026-09-12T11:25:16.558Z",
-    "updated_at": null
+    "updated_at": "2026-09-12T12:00:16.214Z"
   },
   {
     "id": "0d4280ce-4e33-4343-9fef-56432a342dd1",
