@@ -4,10 +4,10 @@
     "nickname": "Pip",
     "tracking_number": "420946089261290400234279358347",
     "carrier": "usps",
-    "status": "unknown",
+    "status": "label_created",
     "notes": "",
     "added_at": "2026-09-13T23:49:31.610Z",
-    "updated_at": null
+    "updated_at": "2026-09-13T23:49:40.636Z"
   },
   {
     "id": "5ba64b92-e43d-4a4c-b807-00ecf388e98b",
