@@ -114,10 +114,10 @@
     "nickname": "SB",
     "tracking_number": "9434650205448002546113",
     "carrier": "usps",
-    "status": "unknown",
+    "status": "in_transit",
     "notes": "",
     "added_at": "2026-09-12T20:32:22.321Z",
-    "updated_at": null
+    "updated_at": "2026-09-13T23:59:12.155Z"
   },
   {
     "id": "da8a7f52-4686-45b8-a67e-fff7ae884ca2",
