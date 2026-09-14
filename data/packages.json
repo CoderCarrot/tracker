@@ -44,10 +44,10 @@
     "nickname": "FB - RL",
     "tracking_number": "9300111043900026315851",
     "carrier": "usps",
-    "status": "in_transit",
+    "status": "out_for_delivery",
     "notes": "M",
     "added_at": "2026-09-12T20:59:21.891Z",
-    "updated_at": "2026-09-13T23:56:41.785Z"
+    "updated_at": "2026-09-14T17:35:39.927Z"
   },
   {
     "id": "d311b8b1-c8b1-478c-ba75-90150b46adea",
