@@ -104,10 +104,10 @@
     "nickname": "SBP",
     "tracking_number": "9400150206217911878236",
     "carrier": "usps",
-    "status": "out_for_delivery",
+    "status": "delivered",
     "notes": "",
     "added_at": "2026-09-12T20:36:37.224Z",
-    "updated_at": "2026-09-12T20:36:46.136Z"
+    "updated_at": "2026-09-14T00:11:47.450Z"
   },
   {
     "id": "a2d1eef6-59f3-4118-a43b-e9824a54b492",
