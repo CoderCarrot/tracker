@@ -84,10 +84,10 @@
     "nickname": "WTS - 250109",
     "tracking_number": "9261290318410202054184",
     "carrier": "usps",
-    "status": "label_created",
+    "status": "in_transit",
     "notes": "Wh - W",
     "added_at": "2026-09-12T20:51:13.271Z",
-    "updated_at": "2026-09-15T18:32:26.615Z"
+    "updated_at": "2026-09-15T18:32:29.370Z"
   },
   {
     "id": "cdfa981e-48f0-46ca-8759-119afafa9416",
