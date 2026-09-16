@@ -184,10 +184,10 @@
     "nickname": "SG - H",
     "tracking_number": "9434650105498015886103",
     "carrier": "usps",
-    "status": "label_created",
+    "status": "in_transit",
     "notes": "M",
     "added_at": "2026-09-12T11:06:10.437Z",
-    "updated_at": "2026-09-16T17:13:55.775Z"
+    "updated_at": "2026-09-16T17:13:58.775Z"
   },
   {
     "id": "314f3f1d-496a-41e2-9096-8ceb6c6487cf",
