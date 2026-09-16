@@ -74,20 +74,20 @@
     "nickname": "FB - LA",
     "tracking_number": "9334611043900012397887",
     "carrier": "usps",
-    "status": "out_for_delivery",
+    "status": "delivered",
     "notes": "M",
     "added_at": "2026-09-12T20:56:02.441Z",
-    "updated_at": "2026-09-14T17:35:45.634Z"
+    "updated_at": "2026-09-16T03:26:20.349Z"
   },
   {
     "id": "79f184a9-610f-444e-93ff-e47b01ba74d7",
     "nickname": "WTS - 250109",
     "tracking_number": "9261290318410202054184",
     "carrier": "usps",
-    "status": "label_created",
+    "status": "in_transit",
     "notes": "Wh",
     "added_at": "2026-09-12T20:51:13.271Z",
-    "updated_at": "2026-09-12T20:51:31.809Z"
+    "updated_at": "2026-09-16T03:26:34.295Z"
   },
   {
     "id": "cdfa981e-48f0-46ca-8759-119afafa9416",
