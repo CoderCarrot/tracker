@@ -14,10 +14,10 @@
     "nickname": "E - WWC",
     "tracking_number": "9300120818100668048539",
     "carrier": "usps",
-    "status": "unknown",
+    "status": "in_transit",
     "notes": "",
     "added_at": "2026-09-17T19:12:47.385Z",
-    "updated_at": null
+    "updated_at": "2026-09-17T19:14:29.311Z"
   },
   {
     "id": "65601462-45a1-46e4-9f83-c750847ba99b",
