@@ -4,10 +4,10 @@
     "nickname": "HBS",
     "tracking_number": "9400150106151398835966",
     "carrier": "usps",
-    "status": "unknown",
+    "status": "label_created",
     "notes": "",
     "added_at": "2026-09-18T19:25:14.416Z",
-    "updated_at": null
+    "updated_at": "2026-09-18T22:41:53.964Z"
   },
   {
     "id": "36914c8d-3a17-48e7-8065-19722f976aed",
