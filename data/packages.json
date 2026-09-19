@@ -104,10 +104,10 @@
     "nickname": "Pip",
     "tracking_number": "420946089261290400234279358347",
     "carrier": "usps",
-    "status": "out_for_delivery",
+    "status": "delivered",
     "notes": "F",
     "added_at": "2026-09-13T23:49:31.610Z",
-    "updated_at": "2026-09-18T16:54:28.125Z"
+    "updated_at": "2026-09-19T04:40:59.443Z"
   },
   {
     "id": "5ba64b92-e43d-4a4c-b807-00ecf388e98b",
