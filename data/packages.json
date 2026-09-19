@@ -1,23 +1,33 @@
 [
   {
+    "id": "f370de20-bffa-4240-911f-40d60a2fb67e",
+    "nickname": "M - Tay",
+    "tracking_number": "9234690195851602725819",
+    "carrier": "usps",
+    "status": "unknown",
+    "notes": "",
+    "added_at": "2026-09-19T04:38:14.814Z",
+    "updated_at": null
+  },
+  {
     "id": "05af5426-1c51-4952-b929-835b6f8ae086",
     "nickname": "HBS",
     "tracking_number": "9400150106151398835966",
     "carrier": "usps",
-    "status": "label_created",
+    "status": "unknown",
     "notes": "",
     "added_at": "2026-09-18T19:25:14.416Z",
-    "updated_at": "2026-09-18T22:41:53.964Z"
+    "updated_at": null
   },
   {
     "id": "36914c8d-3a17-48e7-8065-19722f976aed",
     "nickname": "SPC",
     "tracking_number": "9400150106151398039180",
     "carrier": "usps",
-    "status": "label_created",
+    "status": "unknown",
     "notes": "",
     "added_at": "2026-09-18T19:02:59.234Z",
-    "updated_at": "2026-09-18T22:42:01.530Z"
+    "updated_at": null
   },
   {
     "id": "25eb2d0e-931e-45ff-94b1-8217fc5bcaab",
@@ -44,10 +54,10 @@
     "nickname": "SBP",
     "tracking_number": "9400150106151395942643",
     "carrier": "usps",
-    "status": "delivered",
+    "status": "out_for_delivery",
     "notes": "M",
     "added_at": "2026-09-16T19:14:49.979Z",
-    "updated_at": "2026-09-18T22:41:41.261Z"
+    "updated_at": "2026-09-18T16:53:37.647Z"
   },
   {
     "id": "378e39d1-579f-48a7-be80-8a04da16c96b",
@@ -74,10 +84,10 @@
     "nickname": "HC - 414896, 421118, 421168, 426067",
     "tracking_number": "1ZX219910313580141",
     "carrier": "ups",
-    "status": "delivered",
+    "status": "out_for_delivery",
     "notes": "F",
     "added_at": "2026-09-14T22:32:52.767Z",
-    "updated_at": "2026-09-18T22:41:38.694Z"
+    "updated_at": "2026-09-18T16:54:10.540Z"
   },
   {
     "id": "00794caa-5d94-43b9-b044-102b524b3b84",
@@ -274,10 +284,10 @@
     "nickname": "HC - 407078, 420993, 421095, 371893",
     "tracking_number": "1ZX219910311306898",
     "carrier": "ups",
-    "status": "delivered",
+    "status": "out_for_delivery",
     "notes": "F",
     "added_at": "2026-09-12T11:05:28.483Z",
-    "updated_at": "2026-09-18T22:41:44.087Z"
+    "updated_at": "2026-09-18T16:55:54.281Z"
   },
   {
     "id": "ef13c3dc-1155-40fe-bc04-af38c680ff5b",
