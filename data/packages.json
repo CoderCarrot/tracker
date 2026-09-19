@@ -14,10 +14,10 @@
     "nickname": "FB - LL",
     "tracking_number": "9400150206217925274178",
     "carrier": "usps",
-    "status": "unknown",
+    "status": "label_created",
     "notes": "",
     "added_at": "2026-09-19T19:10:05.957Z",
-    "updated_at": null
+    "updated_at": "2026-09-19T19:14:00.492Z"
   },
   {
     "id": "349a979f-5b67-46b7-820f-45bdc971bcc0",
