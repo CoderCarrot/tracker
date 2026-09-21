@@ -4,10 +4,10 @@
     "nickname": "https://www.royalmail.com/track-your-item#/tracking-results/LT492548542GB",
     "tracking_number": "LT492548542GB",
     "carrier": "usps",
-    "status": "unknown",
+    "status": "in_transit",
     "notes": "",
     "added_at": "2026-09-21T16:16:58.217Z",
-    "updated_at": null
+    "updated_at": "2026-09-21T16:17:11.308Z"
   },
   {
     "id": "9e80b849-d816-406a-b715-2f4d47a413b8",
