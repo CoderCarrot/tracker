@@ -224,10 +224,10 @@
     "nickname": "Oh - 6891",
     "tracking_number": "4209460834689214490362894362216205",
     "carrier": "usps",
-    "status": "out_for_delivery",
+    "status": "delivered",
     "notes": "M",
     "added_at": "2026-09-12T20:47:02.880Z",
-    "updated_at": "2026-09-19T19:56:29.116Z"
+    "updated_at": "2026-09-22T03:09:00.714Z"
   },
   {
     "id": "98ddf59d-a642-4c13-8efb-c7880391a6aa",
