@@ -4,10 +4,10 @@
     "nickname": "HP",
     "tracking_number": "420946089214490362894363121133",
     "carrier": "usps",
-    "status": "unknown",
+    "status": "label_created",
     "notes": "",
     "added_at": "2026-09-24T21:35:17.068Z",
-    "updated_at": null
+    "updated_at": "2026-09-24T21:35:23.962Z"
   },
   {
     "id": "c5b665c1-7cd2-45b8-81ff-1e6fa73a4c27",
