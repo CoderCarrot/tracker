@@ -4,10 +4,10 @@
     "nickname": "M - BP",
     "tracking_number": "9200190195851666841829",
     "carrier": "usps",
-    "status": "unknown",
+    "status": "in_transit",
     "notes": "M",
     "added_at": "2026-09-24T21:16:40.630Z",
-    "updated_at": "2026-09-24T21:16:50.560Z"
+    "updated_at": "2026-09-24T21:16:52.470Z"
   },
   {
     "id": "a415087c-0221-4d67-a0f6-6221628555aa",
