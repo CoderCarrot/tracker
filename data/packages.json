@@ -4,10 +4,10 @@
     "nickname": "FB - LE",
     "tracking_number": "9334611043900215259036",
     "carrier": "usps",
-    "status": "unknown",
+    "status": "out_for_delivery",
     "notes": "",
     "added_at": "2026-09-24T21:09:34.506Z",
-    "updated_at": null
+    "updated_at": "2026-09-24T21:09:44.242Z"
   },
   {
     "id": "ca9a8271-7bdb-4329-87cc-61859d41f96a",
