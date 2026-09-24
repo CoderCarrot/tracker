@@ -4,10 +4,10 @@
     "nickname": "PM - 34812",
     "tracking_number": "420946089214490362894362533838",
     "carrier": "usps",
-    "status": "unknown",
+    "status": "label_created",
     "notes": "",
     "added_at": "2026-09-23T16:53:16.467Z",
-    "updated_at": null
+    "updated_at": "2026-09-24T20:59:17.212Z"
   },
   {
     "id": "f0938468-45db-479f-9486-80dae815b52f",
