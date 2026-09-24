@@ -54,10 +54,10 @@
     "nickname": "M - taylor",
     "tracking_number": "9234690195851602725819",
     "carrier": "usps",
-    "status": "in_transit",
+    "status": "out_for_delivery",
     "notes": "S",
     "added_at": "2026-09-19T04:38:44.973Z",
-    "updated_at": "2026-09-19T19:11:57.706Z"
+    "updated_at": "2026-09-24T21:00:42.399Z"
   },
   {
     "id": "05af5426-1c51-4952-b929-835b6f8ae086",
