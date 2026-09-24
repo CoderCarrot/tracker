@@ -334,10 +334,10 @@
     "nickname": "SD - 10950",
     "tracking_number": "9200190323035500889487",
     "carrier": "usps",
-    "status": "out_for_delivery",
+    "status": "delivered",
     "notes": "R",
     "added_at": "2026-09-12T11:33:18.939Z",
-    "updated_at": "2026-09-24T21:01:22.102Z"
+    "updated_at": "2026-09-24T22:51:44.164Z"
   },
   {
     "id": "196d1caa-1422-4747-8f0b-a95035b9a59f",
