@@ -74,10 +74,10 @@
     "nickname": "SPC",
     "tracking_number": "9400150106151398039180",
     "carrier": "usps",
-    "status": "in_transit",
+    "status": "out_for_delivery",
     "notes": "R",
     "added_at": "2026-09-18T19:02:59.234Z",
-    "updated_at": "2026-09-24T21:00:58.636Z"
+    "updated_at": "2026-09-24T21:01:00.116Z"
   },
   {
     "id": "25eb2d0e-931e-45ff-94b1-8217fc5bcaab",
