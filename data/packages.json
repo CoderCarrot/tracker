@@ -14,10 +14,10 @@
     "nickname": "DHL Germ - MS",
     "tracking_number": "358074077781",
     "carrier": "usps",
-    "status": "unknown",
+    "status": "label_created",
     "notes": "",
     "added_at": "2026-09-24T21:34:22.338Z",
-    "updated_at": null
+    "updated_at": "2026-09-24T21:35:26.662Z"
   },
   {
     "id": "ba2a7ddc-972c-4eaa-bc2c-5cb959ad691d",
