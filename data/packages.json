@@ -144,10 +144,10 @@
     "nickname": "HBS",
     "tracking_number": "9400150106151398835966",
     "carrier": "usps",
-    "status": "in_transit",
+    "status": "out_for_delivery",
     "notes": "M",
     "added_at": "2026-09-18T19:25:14.416Z",
-    "updated_at": "2026-09-23T16:52:17.616Z"
+    "updated_at": "2026-09-26T21:07:24.239Z"
   },
   {
     "id": "36914c8d-3a17-48e7-8065-19722f976aed",
