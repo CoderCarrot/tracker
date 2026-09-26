@@ -214,10 +214,10 @@
     "nickname": "PM - 34797",
     "tracking_number": "420946089214490362894362228819",
     "carrier": "usps",
-    "status": "label_created",
+    "status": "in_transit",
     "notes": "",
     "added_at": "2026-09-13T23:58:13.878Z",
-    "updated_at": "2026-09-13T23:59:36.637Z"
+    "updated_at": "2026-09-26T21:07:30.586Z"
   },
   {
     "id": "5ffc41e0-5d2b-483e-8b91-13434a78d089",
