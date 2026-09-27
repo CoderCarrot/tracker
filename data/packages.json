@@ -4,10 +4,10 @@
     "nickname": "M - st",
     "tracking_number": "9200190195851680144869",
     "carrier": "usps",
-    "status": "unknown",
+    "status": "in_transit",
     "notes": "",
     "added_at": "2026-09-27T06:08:14.259Z",
-    "updated_at": null
+    "updated_at": "2026-09-27T06:08:23.810Z"
   },
   {
     "id": "756c11ff-7427-43f6-943e-dfa0502102b0",
