@@ -44,10 +44,10 @@
     "nickname": "MPS - 76835",
     "tracking_number": "LT492548542GB",
     "carrier": "usps",
-    "status": "out_for_delivery",
+    "status": "delivered",
     "notes": "T",
     "added_at": "2026-09-27T02:03:06.577Z",
-    "updated_at": "2026-09-28T16:52:38.149Z"
+    "updated_at": "2026-09-29T16:20:06.152Z"
   },
   {
     "id": "5461c1a7-949f-4526-ba5b-4e25e077488b",
