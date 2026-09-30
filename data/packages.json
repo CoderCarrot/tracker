@@ -4,10 +4,10 @@
     "nickname": "OMWL - 98746",
     "tracking_number": "9214490409333509687978",
     "carrier": "usps",
-    "status": "unknown",
+    "status": "label_created",
     "notes": "",
     "added_at": "2026-09-30T05:29:02.556Z",
-    "updated_at": null
+    "updated_at": "2026-09-30T05:29:08.452Z"
   },
   {
     "id": "4a44fc02-da13-4528-b12a-8e61fa35b601",
