@@ -14,10 +14,10 @@
     "nickname": "FB - NB",
     "tracking_number": "9300111043900394764527",
     "carrier": "usps",
-    "status": "unknown",
+    "status": "in_transit",
     "notes": "",
     "added_at": "2026-09-30T16:42:25.066Z",
-    "updated_at": null
+    "updated_at": "2026-09-30T23:56:52.268Z"
   },
   {
     "id": "028c352f-f47e-4483-b09e-cbc84455e648",
