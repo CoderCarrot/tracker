@@ -34,10 +34,10 @@
     "nickname": "FB - JLH",
     "tracking_number": "9400150206217932424979",
     "carrier": "usps",
-    "status": "in_transit",
+    "status": "out_for_delivery",
     "notes": "W",
     "added_at": "2026-09-30T05:05:57.378Z",
-    "updated_at": "2026-09-30T05:06:09.431Z"
+    "updated_at": "2026-09-30T16:30:50.213Z"
   },
   {
     "id": "fef4a459-b6f2-4cea-b5fe-4c4f90eebd15",
