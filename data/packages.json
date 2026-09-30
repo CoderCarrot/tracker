@@ -24,10 +24,10 @@
     "nickname": "SWC",
     "tracking_number": "9400150206217934757440",
     "carrier": "usps",
-    "status": "in_transit",
+    "status": "out_for_delivery",
     "notes": "R",
     "added_at": "2026-09-30T05:26:23.716Z",
-    "updated_at": "2026-09-30T05:26:39.202Z"
+    "updated_at": "2026-09-30T16:30:43.875Z"
   },
   {
     "id": "9eadcb65-faf8-4cc0-aa98-8fcc6d482bfb",
