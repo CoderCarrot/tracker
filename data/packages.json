@@ -214,10 +214,10 @@
     "nickname": "FB - VAT",
     "tracking_number": "9400150106151406138942",
     "carrier": "usps",
-    "status": "in_transit",
+    "status": "out_for_delivery",
     "notes": "W",
     "added_at": "2026-09-24T21:14:03.143Z",
-    "updated_at": "2026-09-29T16:24:38.618Z"
+    "updated_at": "2026-09-30T16:32:59.840Z"
   },
   {
     "id": "5c0f0b8c-d6e4-4389-8fc7-ee552ef8c44b",
