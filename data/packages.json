@@ -184,10 +184,10 @@
     "nickname": "F&C",
     "tracking_number": "LH436826346AU",
     "carrier": "usps",
-    "status": "in_transit",
+    "status": "out_for_delivery",
     "notes": "F",
     "added_at": "2026-09-24T21:36:15.465Z",
-    "updated_at": "2026-09-30T23:59:31.748Z"
+    "updated_at": "2026-10-01T16:43:55.676Z"
   },
   {
     "id": "f711d0fe-ce80-453f-900f-4aa58d17ddfa",
