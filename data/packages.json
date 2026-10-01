@@ -114,10 +114,10 @@
     "nickname": "FB - BH",
     "tracking_number": "9400150106151407518521",
     "carrier": "usps",
-    "status": "in_transit",
+    "status": "out_for_delivery",
     "notes": "R",
     "added_at": "2026-09-27T20:59:32.644Z",
-    "updated_at": "2026-09-30T23:58:37.861Z"
+    "updated_at": "2026-10-01T16:43:26.370Z"
   },
   {
     "id": "4de38d66-5a36-46d1-b60f-094d02d98790",
