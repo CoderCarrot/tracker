@@ -114,10 +114,10 @@
     "nickname": "KA",
     "tracking_number": "LA586457598CA",
     "carrier": "usps",
-    "status": "label_created",
+    "status": "in_transit",
     "notes": "KE",
     "added_at": "2026-09-30T05:26:59.694Z",
-    "updated_at": "2026-09-30T16:30:33.085Z"
+    "updated_at": "2026-10-03T14:30:46.538Z"
   },
   {
     "id": "795bdba6-089f-430e-9975-81ccee9cad97",
