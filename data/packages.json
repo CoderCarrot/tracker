@@ -74,10 +74,10 @@
     "nickname": "SD",
     "tracking_number": "9200190323035501607776",
     "carrier": "usps",
-    "status": "unknown",
+    "status": "label_created",
     "notes": "",
     "added_at": "2026-10-03T02:48:08.093Z",
-    "updated_at": null
+    "updated_at": "2026-10-03T14:29:48.320Z"
   },
   {
     "id": "bc245610-d204-430a-9fb5-88d8ffd1bf23",
