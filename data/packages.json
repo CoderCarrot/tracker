@@ -1,15 +1,5 @@
 [
   {
-    "id": "e6437a61-9246-4497-b4bd-3c4a38f01c7a",
-    "nickname": "FB - LP",
-    "tracking_number": "92612903221130541545760073",
-    "carrier": "usps",
-    "status": "unknown",
-    "notes": "",
-    "added_at": "2026-10-03T03:16:11.762Z",
-    "updated_at": null
-  },
-  {
     "id": "e62be565-6fe3-403f-a75a-4d56c9b14a9f",
     "nickname": "FB - EB",
     "tracking_number": "9400150206217940705480",
