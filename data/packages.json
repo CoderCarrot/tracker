@@ -194,10 +194,10 @@
     "nickname": "HP",
     "tracking_number": "420946089214490362894363121133",
     "carrier": "usps",
-    "status": "out_for_delivery",
+    "status": "delivered",
     "notes": "M",
     "added_at": "2026-09-24T21:35:17.068Z",
-    "updated_at": "2026-10-02T19:33:36.688Z"
+    "updated_at": "2026-10-03T00:41:47.157Z"
   },
   {
     "id": "c5b665c1-7cd2-45b8-81ff-1e6fa73a4c27",
