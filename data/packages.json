@@ -14,10 +14,10 @@
     "nickname": "TGE",
     "tracking_number": "9300111043900400371862",
     "carrier": "usps",
-    "status": "unknown",
+    "status": "label_created",
     "notes": "",
     "added_at": "2026-10-05T20:21:52.788Z",
-    "updated_at": null
+    "updated_at": "2026-10-05T20:25:10.094Z"
   },
   {
     "id": "9f15a57d-4f52-47ec-84a6-ffb51559c3f9",
@@ -34,10 +34,10 @@
     "nickname": "MTP",
     "tracking_number": "92001902673388001059566453",
     "carrier": "usps",
-    "status": "unknown",
+    "status": "label_created",
     "notes": "",
     "added_at": "2026-10-05T20:21:02.390Z",
-    "updated_at": null
+    "updated_at": "2026-10-05T20:25:10.991Z"
   },
   {
     "id": "895a66f8-d26c-4a12-a352-5ec62aae8c69",
