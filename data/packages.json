@@ -4,10 +4,10 @@
     "nickname": "SG - 707303",
     "tracking_number": "9400150206241049779844",
     "carrier": "usps",
-    "status": "unknown",
+    "status": "label_created",
     "notes": "",
     "added_at": "2026-10-05T20:23:50.479Z",
-    "updated_at": null
+    "updated_at": "2026-10-05T20:25:07.265Z"
   },
   {
     "id": "bbe0d8e0-e8f7-4760-ae58-11b751ea6894",
