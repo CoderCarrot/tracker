@@ -164,10 +164,10 @@
     "nickname": "FB - JW",
     "tracking_number": "9300111043900389542659",
     "carrier": "usps",
-    "status": "in_transit",
+    "status": "out_for_delivery",
     "notes": "T",
     "added_at": "2026-09-30T05:01:49.496Z",
-    "updated_at": "2026-10-03T14:31:34.223Z"
+    "updated_at": "2026-10-05T16:58:43.801Z"
   },
   {
     "id": "e7172425-3176-49b8-ab3a-94f6fb02bdb6",
