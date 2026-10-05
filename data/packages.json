@@ -74,10 +74,10 @@
     "nickname": "WB",
     "tracking_number": "92346902673388000497085559",
     "carrier": "usps",
-    "status": "in_transit",
+    "status": "out_for_delivery",
     "notes": "W",
     "added_at": "2026-10-03T02:49:14.073Z",
-    "updated_at": "2026-10-03T14:29:35.774Z"
+    "updated_at": "2026-10-05T16:58:09.425Z"
   },
   {
     "id": "ff759e2e-f071-446d-b3bb-8b10cc52558e",
