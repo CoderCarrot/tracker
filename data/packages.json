@@ -4,10 +4,10 @@
     "nickname": "A&O",
     "tracking_number": "420946089261290357445037848027",
     "carrier": "usps",
-    "status": "unknown",
+    "status": "label_created",
     "notes": "",
     "added_at": "2026-10-06T16:25:32.118Z",
-    "updated_at": null
+    "updated_at": "2026-10-06T16:25:35.110Z"
   },
   {
     "id": "f463ae2d-ba25-4489-90c2-f26e34f99d5e",
