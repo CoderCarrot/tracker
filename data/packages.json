@@ -224,10 +224,10 @@
     "nickname": "FB - CDB",
     "tracking_number": "9434650206217295545641",
     "carrier": "usps",
-    "status": "out_for_delivery",
+    "status": "delivered",
     "notes": "M",
     "added_at": "2026-09-30T05:03:31.017Z",
-    "updated_at": "2026-10-05T16:58:36.835Z"
+    "updated_at": "2026-10-06T00:24:23.665Z"
   },
   {
     "id": "60760663-f8a2-4abd-9ba9-fdc5abcff0ed",
