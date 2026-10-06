@@ -124,10 +124,10 @@
     "nickname": "MWSL",
     "tracking_number": "92001902673388001055949854",
     "carrier": "usps",
-    "status": "out_for_delivery",
+    "status": "delivered",
     "notes": "T",
     "added_at": "2026-10-03T02:52:19.403Z",
-    "updated_at": "2026-10-05T16:57:51.208Z"
+    "updated_at": "2026-10-06T00:24:22.090Z"
   },
   {
     "id": "494c4664-2046-4942-8b66-8c0808fdf8a3",
