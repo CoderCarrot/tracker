@@ -304,10 +304,10 @@
     "nickname": "EMAS - 82492",
     "tracking_number": "9200190323035501410628",
     "carrier": "usps",
-    "status": "label_created",
+    "status": "in_transit",
     "notes": "S",
     "added_at": "2026-09-26T22:49:00.423Z",
-    "updated_at": "2026-10-06T14:59:51.821Z"
+    "updated_at": "2026-10-06T14:59:54.556Z"
   },
   {
     "id": "b495ac4d-db7f-4e01-938e-796c0af837ee",
