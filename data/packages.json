@@ -94,10 +94,10 @@
     "nickname": "706764",
     "tracking_number": "9434650105498017382214",
     "carrier": "usps",
-    "status": "label_created",
+    "status": "in_transit",
     "notes": "",
     "added_at": "2026-10-05T20:21:26.962Z",
-    "updated_at": "2026-10-05T20:25:08.934Z"
+    "updated_at": "2026-10-07T14:54:04.039Z"
   },
   {
     "id": "47618892-d569-4e7a-a6f2-3d50c687320b",
