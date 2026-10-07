@@ -164,10 +164,10 @@
     "nickname": "ABY",
     "tracking_number": "92001902673388001057585197",
     "carrier": "usps",
-    "status": "out_for_delivery",
+    "status": "delivered",
     "notes": "R",
     "added_at": "2026-10-03T02:59:06.082Z",
-    "updated_at": "2026-10-07T14:54:57.248Z"
+    "updated_at": "2026-10-07T23:57:29.540Z"
   },
   {
     "id": "db831952-7bc1-4c23-a2d3-1c280452e198",
