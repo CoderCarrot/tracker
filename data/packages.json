@@ -4,10 +4,10 @@
     "nickname": "SBP - 66309",
     "tracking_number": "9400150106151422553170",
     "carrier": "usps",
-    "status": "unknown",
+    "status": "label_created",
     "notes": "",
     "added_at": "2026-10-07T16:06:32.324Z",
-    "updated_at": null
+    "updated_at": "2026-10-08T16:02:40.799Z"
   },
   {
     "id": "9160e9e7-d4ae-40b3-a35a-30b46efb9cbe",
