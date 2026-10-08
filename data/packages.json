@@ -64,10 +64,10 @@
     "nickname": "SKD - 202224",
     "tracking_number": "9400150206217946814599",
     "carrier": "usps",
-    "status": "in_transit",
+    "status": "out_for_delivery",
     "notes": "F",
     "added_at": "2026-10-05T21:27:40.412Z",
-    "updated_at": "2026-10-06T14:57:45.425Z"
+    "updated_at": "2026-10-08T16:03:27.356Z"
   },
   {
     "id": "10b4a4b6-57ca-42cc-8ca3-c0126efd52ff",
