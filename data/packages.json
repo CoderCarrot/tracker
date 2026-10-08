@@ -74,10 +74,10 @@
     "nickname": "OMWL - 105437",
     "tracking_number": "9214490409333509866809",
     "carrier": "usps",
-    "status": "label_created",
+    "status": "in_transit",
     "notes": "T",
     "added_at": "2026-10-05T21:14:46.700Z",
-    "updated_at": "2026-10-08T16:03:40.601Z"
+    "updated_at": "2026-10-08T16:03:42.202Z"
   },
   {
     "id": "6cf6f47a-8bae-4eef-becc-a82ca2103989",
