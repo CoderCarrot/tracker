@@ -164,10 +164,10 @@
     "nickname": "MTP",
     "tracking_number": "92001902673388001059566453",
     "carrier": "usps",
-    "status": "out_for_delivery",
+    "status": "delivered",
     "notes": "T",
     "added_at": "2026-10-05T20:21:02.390Z",
-    "updated_at": "2026-10-08T16:04:12.863Z"
+    "updated_at": "2026-10-09T06:31:44.595Z"
   },
   {
     "id": "895a66f8-d26c-4a12-a352-5ec62aae8c69",
