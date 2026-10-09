@@ -174,10 +174,10 @@
     "nickname": "CCC",
     "tracking_number": "9400150105795103678106",
     "carrier": "usps",
-    "status": "in_transit",
+    "status": "out_for_delivery",
     "notes": "F",
     "added_at": "2026-10-04T20:17:41.990Z",
-    "updated_at": "2026-10-06T14:58:12.469Z"
+    "updated_at": "2026-10-09T15:35:48.647Z"
   },
   {
     "id": "ec1939d0-0b88-45fa-931b-0efd40bcad67",
