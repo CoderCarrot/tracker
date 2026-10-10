@@ -144,10 +144,10 @@
     "nickname": "TGE",
     "tracking_number": "9300111043900400371862",
     "carrier": "usps",
-    "status": "in_transit",
+    "status": "out_for_delivery",
     "notes": "T",
     "added_at": "2026-10-05T20:21:52.788Z",
-    "updated_at": "2026-10-07T14:53:56.488Z"
+    "updated_at": "2026-10-10T22:34:28.779Z"
   },
   {
     "id": "9f15a57d-4f52-47ec-84a6-ffb51559c3f9",
