@@ -254,10 +254,10 @@
     "nickname": "SD",
     "tracking_number": "9200190323035501607776",
     "carrier": "usps",
-    "status": "out_for_delivery",
+    "status": "delivered",
     "notes": "S",
     "added_at": "2026-10-03T02:48:08.093Z",
-    "updated_at": "2026-10-09T15:36:10.472Z"
+    "updated_at": "2026-10-10T01:48:33.044Z"
   },
   {
     "id": "bc245610-d204-430a-9fb5-88d8ffd1bf23",
