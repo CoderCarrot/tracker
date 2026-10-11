@@ -344,10 +344,10 @@
     "nickname": "PM - 34908",
     "tracking_number": "420946089214490362894363275799",
     "carrier": "usps",
-    "status": "out_for_delivery",
+    "status": "delivered",
     "notes": "W",
     "added_at": "2026-09-29T16:22:16.652Z",
-    "updated_at": "2026-10-10T22:34:47.283Z"
+    "updated_at": "2026-10-11T02:38:02.185Z"
   },
   {
     "id": "af6f5eb4-fc69-4b54-b386-fc72cc9a9fd3",
