@@ -154,10 +154,10 @@
     "nickname": "HC - 430479",
     "tracking_number": "1Z04GK220315649497",
     "carrier": "ups",
-    "status": "in_transit",
+    "status": "out_for_delivery",
     "notes": "M",
     "added_at": "2026-10-06T19:50:34.716Z",
-    "updated_at": "2026-10-10T22:33:09.567Z"
+    "updated_at": "2026-10-12T18:54:52.598Z"
   },
   {
     "id": "08989c55-bb48-4099-9470-60d574dda6d0",
