@@ -104,10 +104,10 @@
     "nickname": "HC - 431287",
     "tracking_number": "1Z04GK220322255514",
     "carrier": "ups",
-    "status": "out_for_delivery",
+    "status": "delivered",
     "notes": "M",
     "added_at": "2026-10-08T21:00:34.689Z",
-    "updated_at": "2026-10-12T18:54:29.288Z"
+    "updated_at": "2026-10-12T23:13:34.998Z"
   },
   {
     "id": "7d5cebc0-2772-4972-9ac2-9457e1bbb155",
