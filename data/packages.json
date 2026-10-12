@@ -4,10 +4,10 @@
     "nickname": "FB - ASR",
     "tracking_number": "9300111043900402122790",
     "carrier": "usps",
-    "status": "unknown",
+    "status": "in_transit",
     "notes": "",
     "added_at": "2026-10-12T01:31:15.023Z",
-    "updated_at": null
+    "updated_at": "2026-10-12T01:31:21.304Z"
   },
   {
     "id": "fec6c8d2-61f4-46cf-bd18-b29142bef192",
