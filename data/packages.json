@@ -4,10 +4,10 @@
     "nickname": "A - I",
     "tracking_number": "TBA335422358763",
     "carrier": "usps",
-    "status": "unknown",
+    "status": "label_created",
     "notes": "",
     "added_at": "2026-10-12T02:14:52.626Z",
-    "updated_at": null
+    "updated_at": "2026-10-12T02:14:55.657Z"
   },
   {
     "id": "91b09866-1eda-4094-993c-b9ae75eb9517",
