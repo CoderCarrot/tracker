@@ -1,15 +1,5 @@
 [
   {
-    "id": "4db91776-b178-4656-90e8-d2d48b7afe26",
-    "nickname": "FB - SP",
-    "tracking_number": "9300111043900401797241",
-    "carrier": "ups",
-    "status": "unknown",
-    "notes": "",
-    "added_at": "2026-10-12T01:29:47.510Z",
-    "updated_at": null
-  },
-  {
     "id": "e2b692cd-7b84-44f0-8dc2-b0f3ec5d7292",
     "nickname": "HC - 436137",
     "tracking_number": "1Z04GK220309585362",
