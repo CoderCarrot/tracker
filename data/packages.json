@@ -184,10 +184,10 @@
     "nickname": "MAC - 8060",
     "tracking_number": "92346902673388000498057715",
     "carrier": "usps",
-    "status": "out_for_delivery",
+    "status": "delivered",
     "notes": "T",
     "added_at": "2026-10-05T22:58:24.744Z",
-    "updated_at": "2026-10-13T17:28:55.936Z"
+    "updated_at": "2026-10-13T17:51:29.724Z"
   },
   {
     "id": "60a2e021-d212-42e5-addb-dd3dd0a110cf",
