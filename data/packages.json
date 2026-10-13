@@ -4,10 +4,10 @@
     "nickname": "AM",
     "tracking_number": "9200190392501306343428",
     "carrier": "usps",
-    "status": "unknown",
+    "status": "label_created",
     "notes": "",
     "added_at": "2026-10-13T20:25:33.375Z",
-    "updated_at": null
+    "updated_at": "2026-10-13T20:25:35.382Z"
   },
   {
     "id": "49605164-99a8-48e0-9e7f-542d4f94d7bf",
