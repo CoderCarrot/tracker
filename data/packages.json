@@ -24,10 +24,10 @@
     "nickname": "FB - JHS",
     "tracking_number": "9300111043900402915118",
     "carrier": "usps",
-    "status": "in_transit",
+    "status": "out_for_delivery",
     "notes": "T",
     "added_at": "2026-10-12T02:06:21.878Z",
-    "updated_at": "2026-10-12T18:53:17.014Z"
+    "updated_at": "2026-10-13T17:27:22.437Z"
   },
   {
     "id": "a6563994-824f-47af-921f-4b219ca1ad65",
