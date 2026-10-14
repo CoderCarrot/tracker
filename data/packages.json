@@ -184,10 +184,10 @@
     "nickname": "TCMC",
     "tracking_number": "420946089214490362894363849136",
     "carrier": "usps",
-    "status": "out_for_delivery",
+    "status": "delivered",
     "notes": "T",
     "added_at": "2026-10-07T01:19:38.635Z",
-    "updated_at": "2026-10-13T17:28:41.861Z"
+    "updated_at": "2026-10-14T17:18:15.880Z"
   },
   {
     "id": "a0f86097-d512-49b1-a6fa-725ed006ae40",
