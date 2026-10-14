@@ -44,10 +44,10 @@
     "nickname": "A - I",
     "tracking_number": "TBA335422358763",
     "carrier": "usps",
-    "status": "in_transit",
+    "status": "out_for_delivery",
     "notes": "R",
     "added_at": "2026-10-12T02:14:52.626Z",
-    "updated_at": "2026-10-13T19:57:42.419Z"
+    "updated_at": "2026-10-14T17:50:36.856Z"
   },
   {
     "id": "91b09866-1eda-4094-993c-b9ae75eb9517",
