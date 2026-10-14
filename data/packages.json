@@ -134,10 +134,10 @@
     "nickname": "SpeedX - V - SG",
     "tracking_number": "SPXSFO126903771138",
     "carrier": "usps",
-    "status": "in_transit",
+    "status": "out_for_delivery",
     "notes": "W",
     "added_at": "2026-10-08T21:02:43.584Z",
-    "updated_at": "2026-10-13T19:59:21.302Z"
+    "updated_at": "2026-10-14T17:18:05.237Z"
   },
   {
     "id": "959d86a4-1790-4020-b31c-bdaca7295c0f",
