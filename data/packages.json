@@ -104,10 +104,10 @@
     "nickname": "FB - SP",
     "tracking_number": "9300111043900401797241",
     "carrier": "usps",
-    "status": "out_for_delivery",
+    "status": "delivered",
     "notes": "R",
     "added_at": "2026-10-12T01:30:09.245Z",
-    "updated_at": "2026-10-15T16:51:00.113Z"
+    "updated_at": "2026-10-15T17:27:08.385Z"
   },
   {
     "id": "e2b692cd-7b84-44f0-8dc2-b0f3ec5d7292",
