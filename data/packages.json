@@ -14,10 +14,10 @@
     "nickname": "HC - 443114",
     "tracking_number": "1Z04GK220313077055",
     "carrier": "ups",
-    "status": "unknown",
+    "status": "label_created",
     "notes": "",
     "added_at": "2026-10-15T21:34:14.157Z",
-    "updated_at": null
+    "updated_at": "2026-10-15T21:46:18.202Z"
   },
   {
     "id": "f7b2e668-6c72-4474-97a4-a0df14deb172",
