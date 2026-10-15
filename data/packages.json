@@ -24,10 +24,10 @@
     "nickname": "SG - 707722",
     "tracking_number": "9434650206242017919196",
     "carrier": "usps",
-    "status": "unknown",
+    "status": "label_created",
     "notes": "",
     "added_at": "2026-10-14T17:57:02.989Z",
-    "updated_at": null
+    "updated_at": "2026-10-15T18:28:27.986Z"
   },
   {
     "id": "4c23fa0c-c055-4fc2-8754-08487260ac41",
