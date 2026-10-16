@@ -14,10 +14,10 @@
     "nickname": "PTF1990",
     "tracking_number": "9300111043900410560515",
     "carrier": "usps",
-    "status": "unknown",
+    "status": "label_created",
     "notes": "",
     "added_at": "2026-10-14T17:57:36.508Z",
-    "updated_at": null
+    "updated_at": "2026-10-16T02:17:52.146Z"
   },
   {
     "id": "51cddeec-fa5c-4d2b-bda5-7944d0397327",
