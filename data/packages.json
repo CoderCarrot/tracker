@@ -34,10 +34,10 @@
     "nickname": "M",
     "tracking_number": "9200190195851684136228",
     "carrier": "usps",
-    "status": "label_created",
+    "status": "in_transit",
     "notes": "",
     "added_at": "2026-10-14T03:56:37.498Z",
-    "updated_at": "2026-10-14T03:56:45.062Z"
+    "updated_at": "2026-10-16T02:18:18.347Z"
   },
   {
     "id": "35bc6dce-f6d8-4b28-9ac7-091cb67f40bd",
