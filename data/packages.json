@@ -24,10 +24,10 @@
     "nickname": "HC - 428253",
     "tracking_number": "9214490409333510148512",
     "carrier": "usps",
-    "status": "unknown",
+    "status": "label_created",
     "notes": "",
     "added_at": "2026-10-16T17:00:55.599Z",
-    "updated_at": null
+    "updated_at": "2026-10-16T22:48:07.344Z"
   },
   {
     "id": "d8fb00f3-935a-4f7b-b443-7059f6059116",
