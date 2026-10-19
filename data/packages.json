@@ -4,10 +4,10 @@
     "nickname": "FB - DB",
     "tracking_number": "9305511043900011851879",
     "carrier": "usps",
-    "status": "unknown",
+    "status": "label_created",
     "notes": "",
     "added_at": "2026-10-19T03:12:40.093Z",
-    "updated_at": null
+    "updated_at": "2026-10-19T03:12:55.903Z"
   },
   {
     "id": "ed7c9f59-8f2d-479f-bedf-d686aa64bf28",
