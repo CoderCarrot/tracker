@@ -134,10 +134,10 @@
     "nickname": "AM",
     "tracking_number": "9200190392501306343428",
     "carrier": "usps",
-    "status": "in_transit",
+    "status": "out_for_delivery",
     "notes": "T",
     "added_at": "2026-10-13T20:25:33.375Z",
-    "updated_at": "2026-10-16T16:49:25.150Z"
+    "updated_at": "2026-10-19T16:55:06.545Z"
   },
   {
     "id": "49605164-99a8-48e0-9e7f-542d4f94d7bf",
