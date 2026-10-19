@@ -74,10 +74,10 @@
     "nickname": "FB - VA",
     "tracking_number": "9400150106151432295480",
     "carrier": "usps",
-    "status": "in_transit",
+    "status": "out_for_delivery",
     "notes": "M",
     "added_at": "2026-10-16T02:17:12.981Z",
-    "updated_at": "2026-10-16T02:17:48.420Z"
+    "updated_at": "2026-10-19T16:54:43.867Z"
   },
   {
     "id": "61976841-322b-4dfe-998b-2241732ffd4a",
