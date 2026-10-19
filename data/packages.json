@@ -34,10 +34,10 @@
     "nickname": "HC - 443127",
     "tracking_number": "9214490409333510159198",
     "carrier": "usps",
-    "status": "in_transit",
+    "status": "out_for_delivery",
     "notes": "M",
     "added_at": "2026-10-16T21:17:14.109Z",
-    "updated_at": "2026-10-19T00:29:04.520Z"
+    "updated_at": "2026-10-19T16:54:13.188Z"
   },
   {
     "id": "4e99bf3f-eb3e-4dd6-87ba-9fa41258e38d",
