@@ -4,10 +4,10 @@
     "nickname": "HC - 445916",
     "tracking_number": "1Z04GK220307770263",
     "carrier": "ups",
-    "status": "unknown",
+    "status": "label_created",
     "notes": "",
     "added_at": "2026-10-21T20:57:28.290Z",
-    "updated_at": null
+    "updated_at": "2026-10-21T20:57:37.334Z"
   },
   {
     "id": "858fb721-4a2e-49aa-8036-136b7f0a918c",
