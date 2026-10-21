@@ -114,10 +114,10 @@
     "nickname": "HC - 428253",
     "tracking_number": "9214490409333510148512",
     "carrier": "usps",
-    "status": "out_for_delivery",
+    "status": "delivered",
     "notes": "R",
     "added_at": "2026-10-16T17:00:55.599Z",
-    "updated_at": "2026-10-20T16:40:07.805Z"
+    "updated_at": "2026-10-21T04:10:47.749Z"
   },
   {
     "id": "d8fb00f3-935a-4f7b-b443-7059f6059116",
