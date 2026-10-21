@@ -1,13 +1,63 @@
 [
   {
-    "id": "387f2588-430d-473e-8d79-1a2f0ded19a2",
+    "id": "0cb3992b-2185-48d6-8100-93006742c1e2",
     "nickname": "E",
     "tracking_number": "9434608106244663419077",
     "carrier": "usps",
     "status": "in_transit",
+    "notes": "R",
+    "added_at": "2026-10-21T04:08:47.438Z",
+    "updated_at": "2026-10-21T04:08:51.286Z"
+  },
+  {
+    "id": "cb6ca26a-8b57-462e-840a-8c34ab1665f7",
+    "nickname": "TGE",
+    "tracking_number": "9300111043900416908632",
+    "carrier": "usps",
+    "status": "in_transit",
+    "notes": "M",
+    "added_at": "2026-10-20T18:45:26.531Z",
+    "updated_at": "2026-10-21T04:08:42.890Z"
+  },
+  {
+    "id": "09e23e0a-17a5-44f4-9095-7e4732031008",
+    "nickname": "HC - 443114",
+    "tracking_number": "1Z04GK220313077055",
+    "carrier": "ups",
+    "status": "delivered",
     "notes": "",
-    "added_at": "2026-10-21T04:07:51.346Z",
-    "updated_at": "2026-10-21T04:08:01.341Z"
+    "added_at": "2026-10-20T16:41:16.203Z",
+    "updated_at": "2026-10-20T22:09:41.119Z"
+  },
+  {
+    "id": "b7d68737-4e98-48fa-a495-8099fb8ac458",
+    "nickname": "PM - 35165",
+    "tracking_number": "P8C0E7A83Z",
+    "carrier": "chitchats",
+    "status": "label_created",
+    "notes": "",
+    "added_at": "2026-10-19T20:46:24.571Z",
+    "updated_at": "2026-10-19T20:46:26.448Z"
+  },
+  {
+    "id": "fa28fbf7-5d99-4182-b71b-fe254233e0f1",
+    "nickname": "PM - 35122",
+    "tracking_number": "Q3C32Q6T6I",
+    "carrier": "chitchats",
+    "status": "label_created",
+    "notes": "",
+    "added_at": "2026-10-19T18:50:57.351Z",
+    "updated_at": "2026-10-19T18:51:07.947Z"
+  },
+  {
+    "id": "bddb8b5c-ed17-4d36-a396-d435c6eb3807",
+    "nickname": "HC - 443117",
+    "tracking_number": "9214490409333510195028",
+    "carrier": "usps",
+    "status": "in_transit",
+    "notes": "S",
+    "added_at": "2026-10-19T16:56:47.422Z",
+    "updated_at": "2026-10-20T16:26:40.852Z"
   },
   {
     "id": "cc464989-0520-4d5c-80b2-ae74ecac6a0e",
@@ -24,30 +74,30 @@
     "nickname": "FB - M - JW",
     "tracking_number": "9500115220776290525202",
     "carrier": "usps",
-    "status": "in_transit",
+    "status": "delivered",
     "notes": "F",
     "added_at": "2026-10-17T21:48:45.393Z",
-    "updated_at": "2026-10-19T00:28:43.584Z"
+    "updated_at": "2026-10-20T02:41:31.644Z"
   },
   {
     "id": "38656c46-410a-4cc5-904a-603ab8020a88",
     "nickname": "Plum",
     "tracking_number": "1Z16D13WYW71487518",
     "carrier": "ups",
-    "status": "label_created",
-    "notes": "",
+    "status": "in_transit",
+    "notes": "R",
     "added_at": "2026-10-17T21:31:05.513Z",
-    "updated_at": "2026-10-17T21:31:19.508Z"
+    "updated_at": "2026-10-20T16:27:10.265Z"
   },
   {
     "id": "501a8102-d61a-4b21-a6f6-5d873be53aed",
     "nickname": "HC - 443127",
     "tracking_number": "9214490409333510159198",
     "carrier": "usps",
-    "status": "in_transit",
+    "status": "delivered",
     "notes": "M",
     "added_at": "2026-10-16T21:17:14.109Z",
-    "updated_at": "2026-10-19T00:29:04.520Z"
+    "updated_at": "2026-10-20T02:06:10.667Z"
   },
   {
     "id": "4e99bf3f-eb3e-4dd6-87ba-9fa41258e38d",
@@ -64,30 +114,30 @@
     "nickname": "HC - 428253",
     "tracking_number": "9214490409333510148512",
     "carrier": "usps",
-    "status": "in_transit",
+    "status": "out_for_delivery",
     "notes": "R",
     "added_at": "2026-10-16T17:00:55.599Z",
-    "updated_at": "2026-10-17T20:07:20.720Z"
+    "updated_at": "2026-10-20T16:40:07.805Z"
   },
   {
     "id": "d8fb00f3-935a-4f7b-b443-7059f6059116",
     "nickname": "E",
     "tracking_number": "9434608106245686027515",
     "carrier": "usps",
-    "status": "in_transit",
+    "status": "delivered",
     "notes": "M",
     "added_at": "2026-10-16T02:43:44.165Z",
-    "updated_at": "2026-10-19T00:29:27.777Z"
+    "updated_at": "2026-10-20T02:06:16.448Z"
   },
   {
     "id": "0ca73223-40ef-49f6-a2f5-1281dff549bb",
     "nickname": "FB - VA",
     "tracking_number": "9400150106151432295480",
     "carrier": "usps",
-    "status": "in_transit",
+    "status": "delivered",
     "notes": "M",
     "added_at": "2026-10-16T02:17:12.981Z",
-    "updated_at": "2026-10-16T02:17:48.420Z"
+    "updated_at": "2026-10-20T02:41:36.341Z"
   },
   {
     "id": "61976841-322b-4dfe-998b-2241732ffd4a",
@@ -104,10 +154,10 @@
     "nickname": "SG - 707722",
     "tracking_number": "9434650206242017919196",
     "carrier": "usps",
-    "status": "in_transit",
+    "status": "delivered",
     "notes": "T",
     "added_at": "2026-10-14T17:57:02.989Z",
-    "updated_at": "2026-10-16T16:48:51.483Z"
+    "updated_at": "2026-10-20T02:41:39.812Z"
   },
   {
     "id": "4c23fa0c-c055-4fc2-8754-08487260ac41",
@@ -124,10 +174,10 @@
     "nickname": "Bu",
     "tracking_number": "420946089361211015301032757430",
     "carrier": "usps",
-    "status": "in_transit",
+    "status": "delivered",
     "notes": "M",
     "added_at": "2026-10-13T20:49:44.543Z",
-    "updated_at": "2026-10-17T20:08:49.771Z"
+    "updated_at": "2026-10-20T02:06:23.843Z"
   },
   {
     "id": "e7d3bccc-3339-41c8-b57d-8e4922288967",
@@ -144,10 +194,10 @@
     "nickname": "AM",
     "tracking_number": "9200190392501306343428",
     "carrier": "usps",
-    "status": "in_transit",
+    "status": "delivered",
     "notes": "T",
     "added_at": "2026-10-13T20:25:33.375Z",
-    "updated_at": "2026-10-16T16:49:25.150Z"
+    "updated_at": "2026-10-20T02:06:28.430Z"
   },
   {
     "id": "49605164-99a8-48e0-9e7f-542d4f94d7bf",
