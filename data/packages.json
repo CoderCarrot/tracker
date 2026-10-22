@@ -154,10 +154,10 @@
     "nickname": "Plum",
     "tracking_number": "1Z16D13WYW71487518",
     "carrier": "ups",
-    "status": "out_for_delivery",
+    "status": "delivered",
     "notes": "R",
     "added_at": "2026-10-17T21:31:05.513Z",
-    "updated_at": "2026-10-21T18:43:49.867Z"
+    "updated_at": "2026-10-22T15:22:37.505Z"
   },
   {
     "id": "501a8102-d61a-4b21-a6f6-5d873be53aed",
