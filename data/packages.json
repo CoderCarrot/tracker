@@ -214,10 +214,10 @@
     "nickname": "PTF1990",
     "tracking_number": "9300111043900410560515",
     "carrier": "usps",
-    "status": "out_for_delivery",
+    "status": "delivered",
     "notes": "R",
     "added_at": "2026-10-14T17:57:36.508Z",
-    "updated_at": "2026-10-22T15:22:53.287Z"
+    "updated_at": "2026-10-23T07:02:39.434Z"
   },
   {
     "id": "51cddeec-fa5c-4d2b-bda5-7944d0397327",
