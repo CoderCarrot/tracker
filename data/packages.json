@@ -94,10 +94,10 @@
     "nickname": "E",
     "tracking_number": "9434608106244663419077",
     "carrier": "usps",
-    "status": "out_for_delivery",
+    "status": "delivered",
     "notes": "R",
     "added_at": "2026-10-21T04:08:47.438Z",
-    "updated_at": "2026-10-22T15:22:14.388Z"
+    "updated_at": "2026-10-23T07:02:37.499Z"
   },
   {
     "id": "cb6ca26a-8b57-462e-840a-8c34ab1665f7",
