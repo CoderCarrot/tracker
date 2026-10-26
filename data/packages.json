@@ -94,10 +94,10 @@
     "nickname": "PM - 35122",
     "tracking_number": "420946089235990362894340132815",
     "carrier": "usps",
-    "status": "in_transit",
+    "status": "out_for_delivery",
     "notes": "M",
     "added_at": "2026-10-21T04:10:02.756Z",
-    "updated_at": "2026-10-22T15:21:45.889Z"
+    "updated_at": "2026-10-26T17:45:21.833Z"
   },
   {
     "id": "a54e3028-91b4-4997-9669-989a4ccd97cc",
