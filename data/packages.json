@@ -124,10 +124,10 @@
     "nickname": "FB - KK",
     "tracking_number": "1ZJ1880KYN08290141",
     "carrier": "ups",
-    "status": "exception",
+    "status": "out_for_delivery",
     "notes": "S",
     "added_at": "2026-10-21T20:00:17.725Z",
-    "updated_at": "2026-10-29T15:13:58.934Z"
+    "updated_at": "2026-10-29T20:20:58.065Z"
   },
   {
     "id": "c30d7f8c-2aee-4a5a-be18-a75906e60288",
