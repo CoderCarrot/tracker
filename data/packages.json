@@ -4,10 +4,10 @@
     "nickname": "SH",
     "tracking_number": "92001902673388001106162010",
     "carrier": "usps",
-    "status": "unknown",
+    "status": "label_created",
     "notes": "",
     "added_at": "2026-10-29T18:39:35.424Z",
-    "updated_at": null
+    "updated_at": "2026-10-29T18:39:43.239Z"
   },
   {
     "id": "d800a7f9-7f84-47b5-8f10-fc6615fb3fb1",
