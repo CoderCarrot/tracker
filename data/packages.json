@@ -1,15 +1,5 @@
 [
   {
-    "id": "9c354fc7-ebcc-4ced-92f2-944d807b1eaa",
-    "nickname": "T",
-    "tracking_number": "YWE00001667118336",
-    "carrier": "yanwen",
-    "status": "in_transit",
-    "notes": "",
-    "added_at": "2026-10-29T22:37:53.759Z",
-    "updated_at": "2026-10-29T22:38:08.065Z"
-  },
-  {
     "id": "1c597258-235a-4040-97d0-c24a589e8ba1",
     "nickname": "SH",
     "tracking_number": "92001902673388001106162010",
@@ -137,7 +127,7 @@
     "status": "out_for_delivery",
     "notes": "S",
     "added_at": "2026-10-21T20:00:17.725Z",
-    "updated_at": "2026-10-29T20:20:58.065Z"
+    "updated_at": "2026-10-30T00:52:04.610Z"
   },
   {
     "id": "c30d7f8c-2aee-4a5a-be18-a75906e60288",
@@ -164,10 +154,10 @@
     "nickname": "SG - 708038",
     "tracking_number": "9434650105498018418431",
     "carrier": "usps",
-    "status": "delivered",
+    "status": "out_for_delivery",
     "notes": "R",
     "added_at": "2026-10-21T16:35:16.771Z",
-    "updated_at": "2026-10-29T19:56:07.644Z"
+    "updated_at": "2026-10-29T15:14:16.131Z"
   },
   {
     "id": "c9e226c8-b59d-450e-99b5-8d19398f7368",
