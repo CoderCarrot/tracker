@@ -14,10 +14,10 @@
     "nickname": "MPS - 80974",
     "tracking_number": "LT527254166GB",
     "carrier": "usps",
-    "status": "unknown",
+    "status": "in_transit",
     "notes": "",
     "added_at": "2026-10-29T16:08:42.886Z",
-    "updated_at": null
+    "updated_at": "2026-10-30T05:28:46.280Z"
   },
   {
     "id": "5aefe5fa-99f7-497c-848a-e5bbd32e21f0",
