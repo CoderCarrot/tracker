@@ -25,9 +25,9 @@
     "tracking_number": "9214490409333510507616",
     "carrier": "usps",
     "status": "in_transit",
-    "notes": "",
+    "notes": "T",
     "added_at": "2026-10-29T16:08:05.300Z",
-    "updated_at": "2026-10-30T16:23:34.519Z"
+    "updated_at": "2026-10-30T16:23:36.335Z"
   },
   {
     "id": "f8e0af1b-0ec0-4556-8ede-6a9d939a8514",
@@ -45,29 +45,29 @@
     "tracking_number": "9200190323035502416810",
     "carrier": "usps",
     "status": "in_transit",
-    "notes": "",
+    "notes": "W",
     "added_at": "2026-10-26T20:31:10.512Z",
-    "updated_at": "2026-10-30T05:29:02.470Z"
+    "updated_at": "2026-10-30T16:23:49.656Z"
   },
   {
     "id": "3469843d-5ef6-426a-accb-62a1ff00e8e6",
     "nickname": "EMAS - 84098",
     "tracking_number": "9200190323035502417107",
     "carrier": "usps",
-    "status": "label_created",
-    "notes": "",
+    "status": "in_transit",
+    "notes": "W",
     "added_at": "2026-10-26T20:30:40.513Z",
-    "updated_at": "2026-10-26T22:30:28.877Z"
+    "updated_at": "2026-10-30T16:24:00.895Z"
   },
   {
     "id": "66719b94-bf95-4d73-a5bd-8b9a26f19366",
     "nickname": "EMAS - 84125",
     "tracking_number": "9200190323035502417206",
     "carrier": "usps",
-    "status": "label_created",
+    "status": "in_transit",
     "notes": "",
     "added_at": "2026-10-26T20:29:54.691Z",
-    "updated_at": "2026-10-26T20:30:02.926Z"
+    "updated_at": "2026-10-30T16:24:05.967Z"
   },
   {
     "id": "ad6ab0d4-c9dd-46a8-a199-134d9c759d5e",
