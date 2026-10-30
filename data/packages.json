@@ -4,10 +4,10 @@
     "nickname": "HC - 450092",
     "tracking_number": "9214490409333510546028",
     "carrier": "usps",
-    "status": "unknown",
+    "status": "label_created",
     "notes": "",
     "added_at": "2026-10-30T16:26:42.315Z",
-    "updated_at": null
+    "updated_at": "2026-10-30T16:26:53.030Z"
   },
   {
     "id": "1c597258-235a-4040-97d0-c24a589e8ba1",
