@@ -4,10 +4,10 @@
     "nickname": "E - AAPS",
     "tracking_number": "00040208181002697478",
     "carrier": "usps",
-    "status": "unknown",
+    "status": "label_created",
     "notes": "",
     "added_at": "2026-10-31T06:07:32.401Z",
-    "updated_at": null
+    "updated_at": "2026-11-01T00:14:57.551Z"
   },
   {
     "id": "51fbab41-1973-4822-affa-bf3f7d64bcdb",
