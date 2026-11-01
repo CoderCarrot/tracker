@@ -44,10 +44,10 @@
     "nickname": "SH",
     "tracking_number": "92001902673388001106162010",
     "carrier": "usps",
-    "status": "label_created",
+    "status": "in_transit",
     "notes": "",
     "added_at": "2026-10-29T18:39:35.424Z",
-    "updated_at": "2026-10-29T18:39:43.239Z"
+    "updated_at": "2026-11-01T00:13:04.878Z"
   },
   {
     "id": "d800a7f9-7f84-47b5-8f10-fc6615fb3fb1",
