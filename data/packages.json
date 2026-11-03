@@ -4,10 +4,10 @@
     "nickname": "SD - 11546",
     "tracking_number": "9200190323035502670373",
     "carrier": "usps",
-    "status": "unknown",
+    "status": "label_created",
     "notes": "",
     "added_at": "2026-11-03T16:05:37.531Z",
-    "updated_at": null
+    "updated_at": "2026-11-03T16:05:47.171Z"
   },
   {
     "id": "a08b1ebc-55f9-47ed-b252-42d98fe62763",
