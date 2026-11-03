@@ -144,10 +144,10 @@
     "nickname": "EMAS - 84125",
     "tracking_number": "9200190323035502417206",
     "carrier": "usps",
-    "status": "out_for_delivery",
+    "status": "delivered",
     "notes": "W",
     "added_at": "2026-10-26T20:29:54.691Z",
-    "updated_at": "2026-11-02T17:28:48.417Z"
+    "updated_at": "2026-11-03T02:25:16.903Z"
   },
   {
     "id": "ad6ab0d4-c9dd-46a8-a199-134d9c759d5e",
