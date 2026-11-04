@@ -4,10 +4,10 @@
     "nickname": "S",
     "tracking_number": "1ZX41668YW03011956",
     "carrier": "ups",
-    "status": "unknown",
+    "status": "label_created",
     "notes": "",
     "added_at": "2026-11-04T05:12:15.890Z",
-    "updated_at": null
+    "updated_at": "2026-11-04T05:12:24.394Z"
   },
   {
     "id": "b623d1d7-847b-424d-bb6d-911110312e53",
