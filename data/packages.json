@@ -14,10 +14,10 @@
     "nickname": "MAC",
     "tracking_number": "9300111043900433228867",
     "carrier": "usps",
-    "status": "unknown",
+    "status": "label_created",
     "notes": "",
     "added_at": "2026-11-03T21:19:47.541Z",
-    "updated_at": null
+    "updated_at": "2026-11-04T05:12:31.856Z"
   },
   {
     "id": "f4e20598-d50d-4f13-974e-a2e7b8fda039",
