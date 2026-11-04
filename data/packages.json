@@ -74,10 +74,10 @@
     "nickname": "E - MC",
     "tracking_number": "9300120818100725614332",
     "carrier": "usps",
-    "status": "in_transit",
+    "status": "out_for_delivery",
     "notes": "W",
     "added_at": "2026-11-01T00:16:40.837Z",
-    "updated_at": "2026-11-03T16:03:39.601Z"
+    "updated_at": "2026-11-04T17:18:09.731Z"
   },
   {
     "id": "7651b33f-8570-472e-be84-1bab7d5c4143",
