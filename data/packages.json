@@ -124,10 +124,10 @@
     "nickname": "SH",
     "tracking_number": "92001902673388001106162010",
     "carrier": "usps",
-    "status": "in_transit",
+    "status": "out_for_delivery",
     "notes": "W",
     "added_at": "2026-10-29T18:39:35.424Z",
-    "updated_at": "2026-11-01T00:13:07.172Z"
+    "updated_at": "2026-11-04T17:18:47.128Z"
   },
   {
     "id": "d800a7f9-7f84-47b5-8f10-fc6615fb3fb1",
