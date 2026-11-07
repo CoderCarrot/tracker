@@ -74,10 +74,10 @@
     "nickname": "D",
     "tracking_number": "VR993493092YP",
     "carrier": "yanwen",
-    "status": "in_transit",
+    "status": "out_for_delivery",
     "notes": "",
     "added_at": "2026-11-02T17:29:57.073Z",
-    "updated_at": "2026-11-03T16:03:13.916Z"
+    "updated_at": "2026-11-07T19:44:57.879Z"
   },
   {
     "id": "6f8c4143-cf85-40f5-92e8-8c8730bbec98",
