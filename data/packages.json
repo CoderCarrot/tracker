@@ -1,13 +1,13 @@
 [
   {
-    "id": "51b83004-1298-442d-bc75-83e1a98c8e4a",
-    "nickname": "KA",
-    "tracking_number": "92055902673388000488388721",
-    "carrier": "usps",
-    "status": "label_created",
+    "id": "d824e415-f4bd-429e-8187-d73f2fc46c5b",
+    "nickname": "T",
+    "tracking_number": "YWE00001738711794",
+    "carrier": "yanwen",
+    "status": "unknown",
     "notes": "",
-    "added_at": "2026-11-06T19:45:31.253Z",
-    "updated_at": "2026-11-06T19:45:40.480Z"
+    "added_at": "2026-11-07T06:36:08.096Z",
+    "updated_at": null
   },
   {
     "id": "b50c75c6-af0b-48c2-ba78-a50b4ab97985",
@@ -24,30 +24,30 @@
     "nickname": "MAC",
     "tracking_number": "9300111043900433228867",
     "carrier": "usps",
-    "status": "in_transit",
-    "notes": "M",
+    "status": "label_created",
+    "notes": "",
     "added_at": "2026-11-03T21:19:47.541Z",
-    "updated_at": "2026-11-06T16:54:38.937Z"
+    "updated_at": "2026-11-04T05:12:31.856Z"
   },
   {
     "id": "f4e20598-d50d-4f13-974e-a2e7b8fda039",
     "nickname": "SG - 709213",
     "tracking_number": "9434650105498019238717",
     "carrier": "usps",
-    "status": "in_transit",
-    "notes": "M",
+    "status": "label_created",
+    "notes": "",
     "added_at": "2026-11-03T17:11:40.019Z",
-    "updated_at": "2026-11-05T17:30:52.552Z"
+    "updated_at": "2026-11-03T17:11:47.595Z"
   },
   {
     "id": "4dc3fc7c-8b1d-4578-b8ee-1138e3134ee8",
     "nickname": "SD - 11546",
     "tracking_number": "9200190323035502670373",
     "carrier": "usps",
-    "status": "in_transit",
-    "notes": "R",
+    "status": "label_created",
+    "notes": "",
     "added_at": "2026-11-03T16:05:37.531Z",
-    "updated_at": "2026-11-06T16:54:50.007Z"
+    "updated_at": "2026-11-03T16:05:47.171Z"
   },
   {
     "id": "a08b1ebc-55f9-47ed-b252-42d98fe62763",
@@ -64,10 +64,10 @@
     "nickname": "EMAS - 84354",
     "tracking_number": "9200190323035502637864",
     "carrier": "usps",
-    "status": "in_transit",
-    "notes": "R",
+    "status": "label_created",
+    "notes": "",
     "added_at": "2026-11-02T17:30:18.849Z",
-    "updated_at": "2026-11-06T16:55:04.761Z"
+    "updated_at": "2026-11-03T16:02:37.035Z"
   },
   {
     "id": "5dac92da-608e-4816-8d39-9a77d7c19197",
@@ -94,20 +94,20 @@
     "nickname": "E - AAPS",
     "tracking_number": "00040208181002697478",
     "carrier": "usps",
-    "status": "delivered",
+    "status": "in_transit",
     "notes": "",
     "added_at": "2026-10-31T06:07:32.401Z",
-    "updated_at": "2026-11-06T16:54:19.837Z"
+    "updated_at": "2026-11-02T17:27:19.996Z"
   },
   {
     "id": "51fbab41-1973-4822-affa-bf3f7d64bcdb",
     "nickname": "GOFO - OMWL - 102259",
     "tracking_number": "YT2640321437452389",
     "carrier": "usps",
-    "status": "out_for_delivery",
+    "status": "label_created",
     "notes": "",
     "added_at": "2026-10-31T06:05:20.071Z",
-    "updated_at": "2026-11-06T16:57:02.114Z"
+    "updated_at": "2026-11-01T00:15:02.898Z"
   },
   {
     "id": "84f41e53-cb7f-4dfc-a17a-bf2a449406f7",
