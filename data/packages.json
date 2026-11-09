@@ -64,10 +64,10 @@
     "nickname": "A&O - S",
     "tracking_number": "420946089261290357445038836160",
     "carrier": "usps",
-    "status": "in_transit",
+    "status": "out_for_delivery",
     "notes": "M",
     "added_at": "2026-11-02T17:31:15.513Z",
-    "updated_at": "2026-11-07T19:44:30.763Z"
+    "updated_at": "2026-11-09T17:10:19.338Z"
   },
   {
     "id": "7eb5f219-d1df-4b04-a091-126cd6be3baa",
