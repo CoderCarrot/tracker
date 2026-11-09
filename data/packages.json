@@ -4,10 +4,10 @@
     "nickname": "E - Ga",
     "tracking_number": "9300189517200434129491",
     "carrier": "usps",
-    "status": "unknown",
+    "status": "in_transit",
     "notes": "",
     "added_at": "2026-11-07T19:47:31.015Z",
-    "updated_at": null
+    "updated_at": "2026-11-09T04:10:14.508Z"
   },
   {
     "id": "d824e415-f4bd-429e-8187-d73f2fc46c5b",
