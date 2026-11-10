@@ -74,10 +74,10 @@
     "nickname": "S",
     "tracking_number": "1ZX41668YW03011956",
     "carrier": "ups",
-    "status": "in_transit",
+    "status": "out_for_delivery",
     "notes": "R",
     "added_at": "2026-11-04T05:12:15.890Z",
-    "updated_at": "2026-11-07T19:43:51.260Z"
+    "updated_at": "2026-11-10T17:40:57.621Z"
   },
   {
     "id": "b623d1d7-847b-424d-bb6d-911110312e53",
