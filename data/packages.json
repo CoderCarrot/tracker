@@ -24,10 +24,10 @@
     "nickname": "FB - NM",
     "tracking_number": "9500113007676313483069",
     "carrier": "usps",
-    "status": "in_transit",
+    "status": "out_for_delivery",
     "notes": "S",
     "added_at": "2026-11-10T02:02:41.809Z",
-    "updated_at": "2026-11-10T17:39:44.694Z"
+    "updated_at": "2026-11-12T17:57:28.081Z"
   },
   {
     "id": "a0664bf6-4093-4393-9f12-740605fde0a5",
