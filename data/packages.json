@@ -94,10 +94,10 @@
     "nickname": "S - 739982",
     "tracking_number": "92346902673388000538254319",
     "carrier": "usps",
-    "status": "out_for_delivery",
+    "status": "delivered",
     "notes": "R",
     "added_at": "2026-11-09T20:38:58.130Z",
-    "updated_at": "2026-11-12T17:57:43.762Z"
+    "updated_at": "2026-11-13T16:53:26.781Z"
   },
   {
     "id": "165d56db-8032-4013-9973-88971cd1df65",
