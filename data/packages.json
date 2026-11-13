@@ -4,10 +4,10 @@
     "nickname": "OS - 7267",
     "tracking_number": "4209460834689235990362894340502779",
     "carrier": "usps",
-    "status": "unknown",
+    "status": "label_created",
     "notes": "",
     "added_at": "2026-11-13T01:31:17.967Z",
-    "updated_at": null
+    "updated_at": "2026-11-13T01:38:01.118Z"
   },
   {
     "id": "a2c3c77b-9af3-40cd-922e-2bcb6d307646",
