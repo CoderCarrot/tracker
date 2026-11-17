@@ -34,10 +34,10 @@
     "nickname": "CCC",
     "tracking_number": "9300110579500005798427",
     "carrier": "usps",
-    "status": "unknown",
+    "status": "label_created",
     "notes": "",
     "added_at": "2026-11-17T17:55:52.544Z",
-    "updated_at": null
+    "updated_at": "2026-11-17T18:39:25.578Z"
   },
   {
     "id": "3dc1376f-6054-48f7-97f1-7a4bf5b8a55e",
