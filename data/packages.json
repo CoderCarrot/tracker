@@ -4,10 +4,10 @@
     "nickname": "O",
     "tracking_number": "384521209819",
     "carrier": "fedex",
-    "status": "unknown",
+    "status": "out_for_delivery",
     "notes": "",
     "added_at": "2026-11-17T18:39:54.723Z",
-    "updated_at": null
+    "updated_at": "2026-11-17T18:39:58.611Z"
   },
   {
     "id": "c33e434a-58d8-40a3-bb54-1daa716181d5",
