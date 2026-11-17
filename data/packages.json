@@ -4,10 +4,10 @@
     "nickname": "EM - 2251",
     "tracking_number": "9300110615100001832937",
     "carrier": "usps",
-    "status": "unknown",
+    "status": "in_transit",
     "notes": "",
     "added_at": "2026-11-17T18:38:55.119Z",
-    "updated_at": null
+    "updated_at": "2026-11-17T18:39:03.957Z"
   },
   {
     "id": "3229f1d6-a0c8-4a46-96a0-74daa9703c27",
