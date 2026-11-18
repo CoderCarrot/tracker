@@ -24,10 +24,10 @@
     "nickname": "O",
     "tracking_number": "384521209819",
     "carrier": "fedex",
-    "status": "out_for_delivery",
+    "status": "delivered",
     "notes": "",
     "added_at": "2026-11-17T18:39:54.723Z",
-    "updated_at": "2026-11-17T18:39:58.611Z"
+    "updated_at": "2026-11-18T00:38:04.471Z"
   },
   {
     "id": "c33e434a-58d8-40a3-bb54-1daa716181d5",
