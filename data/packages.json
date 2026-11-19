@@ -4,10 +4,10 @@
     "nickname": "FB - AA",
     "tracking_number": "1Z0B8R120334680595",
     "carrier": "ups",
-    "status": "unknown",
+    "status": "in_transit",
     "notes": "",
     "added_at": "2026-11-19T02:57:57.726Z",
-    "updated_at": null
+    "updated_at": "2026-11-19T02:58:20.108Z"
   },
   {
     "id": "e104728f-7fd7-4561-9539-8f2f9c7ad781",
