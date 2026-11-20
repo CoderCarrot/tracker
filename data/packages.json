@@ -74,10 +74,10 @@
     "nickname": "SG - 710380",
     "tracking_number": "9400150206242055354148",
     "carrier": "usps",
-    "status": "in_transit",
+    "status": "out_for_delivery",
     "notes": "M",
     "added_at": "2026-11-17T18:37:46.405Z",
-    "updated_at": "2026-11-18T18:01:47.082Z"
+    "updated_at": "2026-11-20T17:32:05.720Z"
   },
   {
     "id": "88f6a769-8213-4e73-9458-2e7005ce3358",
