@@ -174,10 +174,10 @@
     "nickname": "F&C",
     "tracking_number": "LH442914274AU",
     "carrier": "usps",
-    "status": "in_transit",
+    "status": "out_for_delivery",
     "notes": "S",
     "added_at": "2026-11-11T06:26:35.276Z",
-    "updated_at": "2026-11-18T18:03:26.628Z"
+    "updated_at": "2026-11-22T00:53:48.833Z"
   },
   {
     "id": "26d2112b-ac87-4609-993d-dbad111f30fa",
