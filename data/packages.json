@@ -84,10 +84,10 @@
     "nickname": "T",
     "tracking_number": "YWE00001782056247",
     "carrier": "yanwen",
-    "status": "label_created",
+    "status": "out_for_delivery",
     "notes": "",
     "added_at": "2026-11-17T17:59:35.243Z",
-    "updated_at": "2026-11-17T18:39:20.767Z"
+    "updated_at": "2026-11-23T17:44:19.386Z"
   },
   {
     "id": "a632fff5-daa0-4822-a30c-7bf18c6dadee",
