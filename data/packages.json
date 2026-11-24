@@ -34,10 +34,10 @@
     "nickname": "FB - AA",
     "tracking_number": "1Z0B8R120334680595",
     "carrier": "ups",
-    "status": "in_transit",
+    "status": "out_for_delivery",
     "notes": "T",
     "added_at": "2026-11-19T02:57:57.726Z",
-    "updated_at": "2026-11-19T02:58:22.383Z"
+    "updated_at": "2026-11-24T17:54:51.157Z"
   },
   {
     "id": "e104728f-7fd7-4561-9539-8f2f9c7ad781",
