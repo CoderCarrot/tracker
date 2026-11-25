@@ -44,10 +44,10 @@
     "nickname": "AU",
     "tracking_number": "9400150899563539395230",
     "carrier": "usps",
-    "status": "out_for_delivery",
+    "status": "delivered",
     "notes": "T",
     "added_at": "2026-11-19T17:21:12.651Z",
-    "updated_at": "2026-11-24T17:54:26.005Z"
+    "updated_at": "2026-11-25T20:07:47.967Z"
   },
   {
     "id": "87810106-0c38-4cc3-a655-1eda9ebc3291",
