@@ -4,10 +4,10 @@
     "nickname": "LDN",
     "tracking_number": "544449701537",
     "carrier": "fedex",
-    "status": "out_for_delivery",
+    "status": "exception",
     "notes": "",
     "added_at": "2026-11-25T00:02:10.779Z",
-    "updated_at": "2026-11-25T20:06:55.458Z"
+    "updated_at": "2026-11-27T01:27:35.383Z"
   },
   {
     "id": "b44ac81e-20c9-48a7-ae5a-668ee6251ba9",
