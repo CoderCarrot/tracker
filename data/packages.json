@@ -1,5 +1,15 @@
 [
   {
+    "id": "3f744f19-12d2-40e0-84d4-8bc5a52dbc8e",
+    "nickname": "Soo - Shipbob",
+    "tracking_number": "SBAAAAQMCD9RHP297",
+    "carrier": "usps",
+    "status": "unknown",
+    "notes": "",
+    "added_at": "2026-11-28T19:15:04.544Z",
+    "updated_at": null
+  },
+  {
     "id": "e6125fe0-0219-47fd-acb4-ecca477c5072",
     "nickname": "MAC - 8175",
     "tracking_number": "92001902673388001158017955",
